@@ -1,0 +1,8 @@
+openai>=1.0.0
+PyPDF2>=3.0.0
+tqdm>=4.65.0
+fastapi
+uvicorn
+pydantic
+pinecone-client
+python-multipart 

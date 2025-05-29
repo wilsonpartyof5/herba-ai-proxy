@@ -1,0 +1,2150 @@
+{
+    "Herbal Medicine": {
+        "Properties": "Herbal medicine utilizes the properties of herbs for healing and wellness. These properties can vary widely among different herbs, including anti-inflammatory, antibacterial, antiviral, adaptogenic, and more.",
+        "Uses": "Used for a wide range of health issues including immune system support, digestive health, mental clarity, stress relief, pain relief, joint health, heart health, weight management, energy and stamina enhancement, skin health, eye health, bone health, and improving physical performance.",
+        "Preparation Methods": "Herbs can be prepared in various forms including teas, tinctures, capsules, powders, and topical applications such as salves and ointments.",
+        "Cautions": "While herbal remedies can offer significant benefits, they also come with cautions. It's important to consider potential interactions with medications, allergies, and the specific health conditions of the individual. Professional guidance is recommended for best practices."
+    },
+    "Immune System Support": {
+        "Properties": "Herbs in this category typically have immunomodulatory, antiviral, or antibacterial properties.",
+        "Uses": "These herbs are used to boost immunity, fight infections, provide allergy relief, support autoimmune health, and balance the immune system.",
+        "Preparation Methods": "Common preparations include herbal teas, tinctures, and capsules designed to enhance immune function.",
+        "Cautions": "Some immune-boosting herbs may not be suitable for individuals with autoimmune diseases due to their stimulating effects on the immune system."
+    },
+    "Digestive Health": {
+        "Properties": "Herbs for digestive health often possess anti-inflammatory, soothing, or digestive enzyme-stimulating properties.",
+        "Uses": "Used to remedy indigestion, IBS, detoxify the digestive system, relieve constipation and diarrhea, heal the gut, manage acid reflux, support liver health, and control appetite.",
+        "Preparation Methods": "Preparations include teas, tinctures, and capsules. Some herbs may also be used in cooking for their digestive benefits.",
+        "Cautions": "Certain herbs may interact with medications or exacerbate certain digestive conditions. It's important to use them appropriately."
+    },
+    "Mental and Emotional Health": {
+        "Properties": "These herbs often have adaptogenic, anxiolytic, or nootropic properties.",
+        "Uses": "Herbs in this category are used for stress relief, anxiety and depression management, enhancing mental clarity, improving sleep, boosting mood, treating ADHD, supporting cognitive function, and enhancing memory.",
+        "Preparation Methods": "Teas, tinctures, and capsules are common forms. Some herbs may also be used in aromatherapy.",
+        "Cautions": "Interactions with psychiatric medications are a concern, as well as the potential for exacerbating certain mental health conditions."
+    },
+    "Physical Health and Vitality": {
+        "Properties": "These herbs may have anti-inflammatory, analgesic, cardioprotective, or metabolism-boosting properties.",
+        "Uses": "Used for pain relief, joint health, heart health, weight management, energy and stamina enhancement, skin health, eye health, bone health, and improving physical performance.",
+        "Preparation Methods": "Includes a variety of forms such as teas, tinctures, capsules, and topical applications.",
+        "Cautions": "Potential interactions with medications, particularly blood thinners and heart medications, are a concern. Proper dosing is crucial to avoid adverse effects."
+    },
+    "error": "The provided text does not contain specific information about herbs or herbal medicine. It discusses various human body systems and their functions, including the digestive, respiratory, circulatory, immune, nervous, endocrine, musculoskeletal, and urinary systems. Please provide text that includes details about specific herbs for analysis.",
+    "Introduction to Herbalism": {
+        "Properties": "Holistic, supports body's intrinsic healing, addresses root causes of ailments",
+        "Uses": "Healing, health maintenance, restoring natural balance, nourishing deficiencies, clearing heat, restoring vitality, balancing doshas",
+        "Preparation methods": "Varies widely depending on cultural and geographical context, includes teas, tinctures, poultices, and more",
+        "Cautions": "Herbal medicine should be practiced with knowledge of the herb's effects and potential interactions with other treatments. It's important to consider individual health conditions and consult with a healthcare professional."
+    },
+    "Herbalism in Traditional Chinese Medicine (TCM)": {
+        "Properties": "Uses herbs to harmonize body's yin and yang, nourish deficiencies, clear heat",
+        "Uses": "Part of a comprehensive system including acupuncture, dietary therapy, and qi cultivation",
+        "Preparation methods": "Specific to TCM practices, often involves decoctions and complex formulations",
+        "Cautions": "Requires deep understanding of TCM principles and diagnosis by a qualified practitioner"
+    },
+    "Herbalism in Ayurveda": {
+        "Properties": "Categorizes herbs based on effects on body's doshas (Vata, Pitta, Kapha)",
+        "Uses": "To balance doshas, support body\u2019s self-healing, includes physical and spiritual purification",
+        "Preparation methods": "Includes a wide range of preparations from simple teas to complex herbal compounds",
+        "Cautions": "Selection of herbs should be based on an individual's dosha balance, ideally determined by an experienced Ayurvedic practitioner"
+    },
+    "Herbalism in Greco-Roman Tradition": {
+        "Properties": "Documented medicinal uses of plants, foundation for modern Western herbalism",
+        "Uses": "Wide range of medicinal applications documented by ancient physicians",
+        "Preparation methods": "Included teas, tinctures, and other forms based on documented knowledge",
+        "Cautions": "While historical, knowledge from this tradition forms the basis of much of modern herbal practice; still, contemporary knowledge and safety practices should be applied"
+    },
+    "Herbalism in Indigenous Peoples of the Americas": {
+        "Properties": "Developed complex herbal systems, often blending with European methods",
+        "Uses": "Varied, based on local plant life and cultural traditions",
+        "Preparation methods": "Included unique preparations specific to each culture's traditions",
+        "Cautions": "Knowledge of these practices often passed down through generations, requiring respect for cultural traditions and understanding of specific herbal uses"
+    },
+    "Chamomile": {
+        "Properties": "Calming, supports digestive health.",
+        "Uses": "Promotes relaxation, soothes digestive issues, and supports sleep.",
+        "Preparation methods": "Commonly consumed as a tea, can also be used in baths or as an essential oil.",
+        "Cautions": "Rare allergic reactions in individuals sensitive to the Asteraceae family."
+    },
+    "Echinacea": {
+        "Properties": "Stimulates immune activity",
+        "Uses": "Strengthens the immune system, combats infections",
+        "Preparation methods": "Simmer in hot water with elderberries and ginger, then steep and add honey",
+        "Cautions": "May interact with certain medications and conditions. Consult a healthcare provider if unsure"
+    },
+    "Ginger": {
+        "Properties": "Anti-inflammatory, digestive aid.",
+        "Uses": "Relieves nausea, supports digestion, and reduces inflammation.",
+        "Preparation methods": "Can be consumed fresh, in powder form, or as a tea.",
+        "Cautions": "High doses can interact with blood thinners and cause heartburn."
+    },
+    "Turmeric": {
+        "Properties": "Anti-inflammatory, antioxidant.",
+        "Uses": "Supports joint health, improves digestion, and enhances skin health.",
+        "Preparation methods": "Can be added to foods, taken as a supplement, or used in teas.",
+        "Cautions": "May interact with blood thinners and other medications."
+    },
+    "Garlic": {
+        "Properties": "Promotes arterial health, reduces cholesterol, enhances circulation",
+        "Uses": "Part of an arterial cleanse mix for cardiovascular health.",
+        "Preparation methods": "Crushed and mixed with warm water, ginger, and lemon juice.",
+        "Cautions": "Not specified in the text."
+    },
+    "Milk Thistle": {
+        "Properties": "Enhances liver detoxification, improves skin health.",
+        "Uses": "Supports liver function and promotes clear skin.",
+        "Preparation Methods": "Steep seeds in hot water.",
+        "Cautions": "None specified."
+    },
+    "Dandelion Root": {
+        "Properties": "Supports digestion, detoxification.",
+        "Uses": "Used for digestive support and may help with liver detoxification.",
+        "Preparation methods": "Can be brewed as tea or taken as a tincture or capsule.",
+        "Cautions": "May interact with diuretics or drugs that affect blood clotting. Consult with a healthcare provider if you have gallbladder disease."
+    },
+    "Nettle": {
+        "Properties": "Nutritive, rich in vitamins and minerals.",
+        "Uses": "Nourishes the body, supports joint health, and alleviates allergy symptoms.",
+        "Preparation methods": "Can be consumed as a tea, tincture, or added to foods like soups and stews.",
+        "Cautions": "People with certain health conditions should consult a healthcare provider before use."
+    },
+    "Parsley": {
+        "Properties": "Diuretic, supports kidney health, promotes detoxification.",
+        "Uses": "Used in kidney-cleansing juices and as a flavoring and detoxifying agent in foods.",
+        "Preparation methods": "Blend 1 handful of Parsley with cucumber, green apple, and lemon juice for a kidney-cleansing juice.",
+        "Cautions": "Ensure proper hydration when consuming diuretic herbs."
+    },
+    "Red Clover": {
+        "Properties": "Promotes bone density, balances hormones, supports calcium absorption.",
+        "Uses": "Used in a Bone Support Elixir to enhance bone strength and balance hormones.",
+        "Preparation Methods": "Steeped in apple cider vinegar for 4 weeks.",
+        "Cautions": "May have estrogenic effects; caution is advised for those with hormone-sensitive conditions."
+    },
+    "Cleavers": {
+        "Properties": "Stimulates lymphatic system activity",
+        "Uses": "Lymphatic drainage tea",
+        "Preparation methods": "Steep in boiling water",
+        "Cautions": "Not specified in the text"
+    },
+    "Burdock Root": {
+        "Properties": "Detoxifying compounds, promotes bone density",
+        "Uses": "Supports bone health and detoxification",
+        "Preparation Methods": "Simmer in water for 15 minutes alongside Dandelion Root",
+        "Cautions": "None specified"
+    },
+    "Nettle Leaf": {
+        "Properties": "Rich in vitamins A, C, K; purifying and anti-inflammatory.",
+        "Uses": "Balances hormones, reduces acne, promotes clear skin.",
+        "Preparation methods": "Taken internally to cleanse the blood.",
+        "Cautions": "May cause mild stomach upset or allergic reactions."
+    },
+    "Uva Ursi": {
+        "Properties": "Antiseptic and diuretic, supports urinary health.",
+        "Uses": "Kidney cleansing and enhancing urinary flow.",
+        "Preparation methods": "Decoction simmered in water.",
+        "Cautions": "Not for long-term use; avoid if pregnant or nursing."
+    },
+    "Fennel": {
+        "Properties": "Improves blood circulation, supports clear vision, reduces inflammation.",
+        "Uses": "Used in a vision-boosting tea to enhance visual clarity and reduce eye strain.",
+        "Preparation methods": "Steeped in hot water with Rosemary for 10-15 minutes.",
+        "Cautions": "May interact with certain medications and is not recommended for pregnant women without consulting a healthcare provider."
+    },
+    "Peppermint": {
+        "Properties": "Aids digestion, relieves nausea.",
+        "Uses": "Commonly used to enhance digestion and relieve symptoms of nausea.",
+        "Preparation methods": "Can be enjoyed as a refreshing tea, used in tinctures, or applied topically in oil form for headaches.",
+        "Cautions": "May cause heartburn in some individuals. Avoid use with gastroesophageal reflux disease (GERD)."
+    },
+    "Calendula": {
+        "Properties": "Soothes muscle aches, supports healing.",
+        "Uses": "Combined with Comfrey in a balm for external application on sore areas.",
+        "Preparation Methods": "Infuse in olive oil over low heat before mixing with beeswax.",
+        "Cautions": "Rarely, may cause allergic reactions in those sensitive to the Asteraceae family."
+    },
+    "Neem": {
+        "Properties": "Improves scalp health, reduces dandruff",
+        "Uses": "Used in hair nourishing oils for scalp health",
+        "Preparation Methods": "Simmer neem powder in sesame oil, strain and store",
+        "Cautions": "None specified"
+    },
+    "Oregon Grape Root": {
+        "Properties": "Antibacterial, antimicrobial",
+        "Uses": "Supporting the immune system, fighting bacterial infections",
+        "Preparation Methods": "Dried powder filled into capsules",
+        "Cautions": "Contains berberine, which may interact with certain medications"
+    },
+    "Milk Thistle Seeds": {
+        "Properties": "Supports liver detoxification, protects liver cells.",
+        "Uses": "Used in liver flush tincture.",
+        "Preparation Methods": "Combined with alcohol to make a tincture.",
+        "Cautions": "May interact with medications metabolized by the liver."
+    },
+    "Licorice Root": {
+        "Properties": "Balances hormones, prevents bone loss.",
+        "Uses": "Incorporated in teas to support bone health and balance hormones.",
+        "Preparation Methods": "Steep 1 teaspoon dried Licorice Root with other herbs in hot water for 15 minutes.",
+        "Cautions": "High doses can lead to hypertension and lower potassium levels."
+    },
+    "Ginger Root": {
+        "Properties": "Stimulates digestion, anti-inflammatory.",
+        "Uses": "Used in a digestive detox tonic and to start the day with a warm cup of Lemon and Ginger tea.",
+        "Preparation methods": "Can be simmered with Yellow Dock Root for a tonic or steeped in hot water with lemon for tea.",
+        "Cautions": "Generally safe, but consult a healthcare provider if pregnant or if you have health conditions."
+    },
+    "Celery": {
+        "Properties": "Enhances urinary flow",
+        "Uses": "Kidney flush juice",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Cucumber": {
+        "Properties": "Helps flush out toxins",
+        "Uses": "Kidney flush juice and gentle detox green smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Lemon": {
+        "Properties": "Aids in detoxification.",
+        "Uses": "Used in detox teas to enhance flavor and promote detoxification.",
+        "Preparation methods": "Fresh lemon juice is added to various herbal preparations, including teas.",
+        "Cautions": "Consuming in large amounts may erode tooth enamel. Always dilute with water."
+    },
+    "Flaxseed": {
+        "Properties": "Provides a balanced mix of soluble and insoluble fiber.",
+        "Uses": "Constipation relief drink.",
+        "Preparation methods": "Mix ground Flaxseed into warm water until fully dissolved.",
+        "Cautions": "Consume with plenty of water to ensure proper digestion."
+    },
+    "Chia Seeds": {
+        "Properties": "High fiber content",
+        "Uses": "Colon cleanse smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Apple": {
+        "Properties": "Not specified in the text",
+        "Uses": "Colon cleanse smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Spinach": {
+        "Properties": "Not specified in the text",
+        "Uses": "Colon cleanse smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Banana": {
+        "Properties": "Not specified in the text",
+        "Uses": "Colon cleanse smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Epsom Salt": {
+        "Properties": "Draws out impurities",
+        "Uses": "Detoxifying herbal bath soak",
+        "Preparation methods": "Mix with other ingredients and add to bathwater",
+        "Cautions": "Not specified in the text"
+    },
+    "Baking Soda": {
+        "Properties": "Not specified in the text",
+        "Uses": "Detoxifying herbal bath soak",
+        "Preparation methods": "Mix with other ingredients and add to bathwater",
+        "Cautions": "Not specified in the text"
+    },
+    "Lavender Essential Oil": {
+        "Properties": "Relaxes muscles",
+        "Uses": "Detoxifying herbal bath soak",
+        "Preparation methods": "Mix with other ingredients and add to bathwater",
+        "Cautions": "Not specified in the text"
+    },
+    "Rosemary": {
+        "Properties": "Antioxidant, supports cognitive function.",
+        "Uses": "Improves memory, aids in digestion, and enhances hair health.",
+        "Preparation methods": "Used in cooking, as an essential oil, or as a tea.",
+        "Cautions": "Excessive consumption can lead to gastrointestinal discomfort."
+    },
+    "Kale": {
+        "Properties": "Provides essential vitamins and minerals",
+        "Uses": "Gentle detox green smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Cilantro": {
+        "Properties": "Detoxifying",
+        "Uses": "Incorporated into meals to support detoxification.",
+        "Preparation methods": "Used fresh in cooking or as an extract.",
+        "Cautions": "Generally safe in food amounts; limited data on high-dose or extract use."
+    },
+    "Coconut Water": {
+        "Properties": "Alkalizes the body",
+        "Uses": "Gentle detox green smoothie",
+        "Preparation methods": "Blend with other ingredients",
+        "Cautions": "Not specified in the text"
+    },
+    "Fennel Seeds": {
+        "Properties": "Reduces bloating, soothes the digestive tract, relieves gas and cramping.",
+        "Uses": "Key ingredient in bloating relief tea.",
+        "Preparation Methods": "Steeped in boiling water to make tea.",
+        "Cautions": "Can interact with certain medications. Not recommended in large doses during pregnancy."
+    },
+    "Peppermint Leaves": {
+        "Properties": "Soothes digestive tract, relieves gas and cramping.",
+        "Uses": "Used in bloating relief tea for digestive comfort.",
+        "Preparation Methods": "Steeped in boiling water to make tea.",
+        "Cautions": "May cause heartburn or allergic reactions in some individuals."
+    },
+    "Chlorella": {
+        "Properties": "Detoxifying",
+        "Uses": "Supports the body\u2019s natural elimination pathways.",
+        "Preparation methods": "Available in tablets, powder, or capsules.",
+        "Cautions": "May cause digestive discomfort. Contaminated products can introduce toxins."
+    },
+    "Bentonite Clay": {
+        "Properties": "Detoxifying, anti-inflammatory",
+        "Uses": "Used in a clay mask to draw out heavy metals from the skin, reduce inflammation, and promote a healthy complexion.",
+        "Preparation Methods": "Mixed with activated charcoal, apple cider vinegar, tea tree essential oil, and distilled water to create a thick paste for topical application.",
+        "Cautions": "Avoid contact with eyes when applying the mask."
+    },
+    "Marshmallow Root": {
+        "Properties": "Hydrating, anti-inflammatory, healing",
+        "Uses": "Speeds up healing, reduces inflammation, hydrates skin",
+        "Preparation methods": "Infuse in Aloe Vera gel, strain, and apply",
+        "Cautions": "Limited, but check for allergies"
+    },
+    "Corn Silk": {
+        "Properties": "Diuretic, reduces inflammation in the urinary tract.",
+        "Uses": "Part of kidney cleanse programs to promote healthy urine flow and reduce inflammation.",
+        "Preparation methods": "Typically used in herbal tea form.",
+        "Cautions": "Adequate hydration is important when using diuretic herbs."
+    },
+    "Dandelion Leaf": {
+        "Properties": "Supports liver and kidney function, diuretic.",
+        "Uses": "Kidney cleansing, supporting liver health, and aiding digestion.",
+        "Preparation methods": "Decoction simmered in water or dried powder for capsules.",
+        "Cautions": "May interact with diuretics and diabetes medication."
+    },
+    "Cayenne Pepper": {
+        "Properties": "Improves blood flow, strengthens the heart, reduces cholesterol levels.",
+        "Uses": "Used for circulatory stimulation and to clear arterial blockages.",
+        "Preparation methods": "Can be consumed in a tonic mixed with Ginger, or used in cooking.",
+        "Cautions": "May irritate the gastrointestinal tract; should be used cautiously by those with sensitive digestive systems."
+    },
+    "Chamomile Flowers": {
+        "Properties": "Soothes digestive system, reduces stress and anxiety.",
+        "Uses": "Included in bloating relief tea for its calming and digestive benefits.",
+        "Preparation Methods": "Steeped in boiling water to make tea.",
+        "Cautions": "Can cause allergic reactions in individuals sensitive to the daisy family."
+    },
+    "Lemon Balm Leaves": {
+        "Properties": "Eases digestive issues, reduces anxiety and promotes sleep.",
+        "Uses": "Part of the bloating relief tea blend for digestive and calming effects.",
+        "Preparation Methods": "Steeped in boiling water to make tea.",
+        "Cautions": "May interact with sedatives and thyroid medications."
+    },
+    "Wormwood": {
+        "Properties": "Antiparasitic",
+        "Uses": "Cleansing the digestive system, supporting gut health",
+        "Preparation Methods": "Tincture",
+        "Cautions": "Long-term use can lead to neurotoxicity; avoid during pregnancy"
+    },
+    "Black Walnut Hull": {
+        "Properties": "Antiparasitic, supports digestive health.",
+        "Uses": "Included in anti-parasitic herbal infusions.",
+        "Preparation Methods": "Steeped in hot water to make an infusion.",
+        "Cautions": "Can cause allergic reactions in individuals sensitive to nuts."
+    },
+    "Clove Buds": {
+        "Properties": "Antimicrobial, supports the removal of parasites.",
+        "Uses": "Part of the anti-parasitic herbal infusion blend.",
+        "Preparation Methods": "Steeped in hot water to make an infusion.",
+        "Cautions": "Excessive use can cause liver damage and interact with blood thinners."
+    },
+    "Thyme": {
+        "Properties": "Contains bone-supporting nutrients",
+        "Uses": "Boosts bone strength and density",
+        "Preparation Methods": "Mix powder with Basil powder and fill capsules",
+        "Cautions": "None specified"
+    },
+    "Artichoke Leaf": {
+        "Properties": "Stimulates bile production, supports detoxification",
+        "Uses": "Enhances digestion, supports liver function",
+        "Preparation methods": {
+            "Liver Bitter Capsules": "Mix 1 tablespoon Yellow Dock Root powder and 1 tablespoon Artichoke Leaf powder thoroughly. Fill empty gel capsules with the mixture and seal."
+        },
+        "Cautions": "None specified"
+    },
+    "Pau d'Arco": {
+        "Properties": "Antifungal, antimicrobial",
+        "Uses": "Fighting yeast and fungal infections, supporting immune health",
+        "Preparation methods": "Dried bark simmered in water for a decoction",
+        "Cautions": "Possible interactions with blood thinning medications"
+    },
+    "Eucalyptus": {
+        "Properties": "Anti-inflammatory, promotes relaxation of tense muscles",
+        "Uses": "Pain relief for sore muscles and joints",
+        "Preparation methods": "Infused in oil for massage",
+        "Cautions": "Can cause allergic reactions; not to be ingested or applied to the face of infants or young children"
+    },
+    "Vitex (Chaste Tree Berry)": {
+        "Properties": "Balances hormonal levels",
+        "Uses": "Helps with mood swings related to PMS or menopause",
+        "Preparation methods": "Available in various forms, including capsules and tinctures",
+        "Cautions": "None specified"
+    },
+    "Ashwagandha": {
+        "Properties": "Adaptogenic, helps the body manage stress, maintains balance.",
+        "Uses": "Daily consumption to support stress management and promote balance in the body.",
+        "Preparation methods": "Can be taken in various forms such as capsules, powders mixed into beverages, or as a tea.",
+        "Cautions": "May interact with certain medications and conditions; consultation with a healthcare provider is recommended before starting."
+    },
+    "Maca": {
+        "Properties": "Boosts stamina, supports overall energy levels",
+        "Uses": "Taken in capsule form to support energy and vitality",
+        "Preparation methods": "Powder mixed with Cordyceps powder and filled into capsules",
+        "Cautions": "May affect hormone levels; consult with a healthcare provider if you have hormone-sensitive conditions"
+    },
+    "Spirulina": {
+        "Properties": "High in protein, essential amino acids, B-vitamins, iron, and omega-3 fatty acids.",
+        "Uses": "Boosts protein intake for those on vegan or vegetarian diets, supports overall nutrition.",
+        "Preparation Methods": "Commonly taken as a powdered supplement or tablet.",
+        "Cautions": "People with autoimmune conditions should consult a healthcare provider due to its immune-boosting properties."
+    },
+    "Rhodiola": {
+        "Properties": "Adaptogen",
+        "Uses": "Rhodiola is primarily used to build resilience, prevent illness, and support overall vitality. Its adaptogenic properties make it particularly beneficial for enhancing the body's resistance to stress, fatigue, and anxiety. It is often recommended for improving mental and physical performance, as well as supporting the immune system.",
+        "Preparation methods": "Rhodiola can be prepared in various ways, including teas, tinctures, capsules, and powders. The method of preparation may depend on the specific health goals or personal preferences. For instance, teas and tinctures are common for daily supplementation to support general well-being, while capsules and powders might be preferred for more targeted or higher-dose applications.",
+        "Cautions": "While Rhodiola is generally considered safe for most people, it's important to start with a low dose to assess tolerance. It may interact with certain medications, so consulting with a healthcare provider before starting Rhodiola, especially for those on prescription drugs, is advisable. Pregnant or breastfeeding women should avoid Rhodiola due to a lack of safety data."
+    },
+    "Maca Root": {
+        "Properties": "Enhances energy and endurance",
+        "Uses": "Boosts energy, supports metabolic function",
+        "Preparation Methods": "Powder can be filled into capsules or added to food/beverages",
+        "Cautions": "May cause hormonal imbalances if consumed in large quantities"
+    },
+    "maca": {
+        "Properties": "Rich in minerals like calcium, potassium, and iron. Has adaptogenic properties.",
+        "Uses": "Traditionally used to boost stamina, increase libido, and support reproductive health. Helps improve resilience to stress and restore hormonal equilibrium.",
+        "Preparation methods": "Available in powder or capsule form, can be incorporated into smoothies or snacks.",
+        "Cautions": "Consult with a healthcare professional if taking medications or have existing health conditions."
+    },
+    "ginger": {
+        "Properties": "Warming and anti-nausea properties.",
+        "Uses": "Used to relieve digestive discomfort, stimulate appetite, and support nutrient absorption.",
+        "Preparation methods": "Can be taken in capsule form or as teas.",
+        "Cautions": "None specifically mentioned, but general advice to consult healthcare professionals applies."
+    },
+    "peppermint": {
+        "Properties": "Soothing effects on the gastrointestinal tract.",
+        "Uses": "Helps relax the muscles of the stomach and intestines, reducing symptoms of bloating, gas, and indigestion.",
+        "Preparation methods": "Can be taken in capsule form or as teas.",
+        "Cautions": "None specifically mentioned, but general advice to consult healthcare professionals applies."
+    },
+    "milk thistle": {
+        "Properties": "Contains silymarins with antioxidant and anti-inflammatory properties.",
+        "Uses": "Supports liver health, protects liver cells from toxins, promotes regeneration, and aids in detoxification.",
+        "Preparation methods": "Regular use recommended for efficiency, but specific methods not detailed.",
+        "Cautions": "Recommended for individuals undergoing detoxification protocols or those with liver-related health concerns."
+    },
+    "immune-boosting blend": {
+        "Properties": "Combines echinacea, elderberry, and astragalus for a synergistic effect.",
+        "Uses": "Strengthens the immune system, fights off infections, enhances the body\u2019s resistance to stress and illness.",
+        "Preparation methods": "Specific preparation methods not detailed.",
+        "Cautions": "Choose high-quality, organic, non-GMO options with third-party certifications. Consult healthcare professionals if taking medications or have existing health conditions."
+    },
+    "culinary herbs (basil, oregano, rosemary, thyme)": {
+        "Properties": "Rich in phytochemicals, antioxidants, and essential oils.",
+        "Uses": "Combat inflammation, support digestion, and promote overall wellness.",
+        "Preparation methods": "Easily incorporated into meals to enhance both nutrition and flavor.",
+        "Cautions": "None specifically mentioned, but incorporating herbs into meals is generally safe."
+    },
+    "Moringa": {
+        "Properties": "Rich in vitamins and minerals, supports immune function, and boosts energy.",
+        "Uses": "Added to smoothies for a nutrient-packed start to the day.",
+        "Preparation Methods": "Blend moringa powder with banana, coconut milk, chia seeds, and honey.",
+        "Cautions": "Should be used with caution in individuals on blood-thinning medications due to its potential anticoagulant effects."
+    },
+    "Red Raspberry Leaf": {
+        "Properties": "Rich in minerals, supports bone health and muscle function.",
+        "Uses": "Commonly used to support pregnancy and labor, but also beneficial for general health.",
+        "Preparation Methods": "Typically consumed as a herbal tea.",
+        "Cautions": "Pregnant women should consult with a healthcare provider before use."
+    },
+    "Oat Straw": {
+        "Properties": "Adds bulk to stool, promotes smooth bowel movements",
+        "Uses": "Used in combination with Psyllium Husk for constipation relief",
+        "Preparation methods": "Powdered form used in capsules in the context provided",
+        "Cautions": "Generally safe, but it's important to ensure adequate hydration."
+    },
+    "Astragalus": {
+        "Properties": "Strengthens immunity.",
+        "Uses": "Supports immune function and enhances vitality.",
+        "Preparation Methods": "Mix 1 tablespoon of powder with Reishi powder, fill empty capsules.",
+        "Cautions": "May interact with immune-suppressing drugs."
+    },
+    "Shiitake Mushroom": {
+        "Properties": "Enhances immune health",
+        "Uses": "Used in soups for immune support during cold and flu season",
+        "Preparation Methods": "Sliced fresh and simmered in broths",
+        "Cautions": "Generally safe, but some may experience digestive upset or allergic reactions"
+    },
+    "Reishi Mushroom": {
+        "Properties": "Supports immune function, enhances recovery",
+        "Uses": "Used in stress-relief and vitality elixirs",
+        "Preparation methods": "Simmered in water with Schisandra or alone",
+        "Cautions": "Could interact with blood thinning medications"
+    },
+    "Eleuthero": {
+        "Properties": "Adaptogenic, reduces cortisol, enhances mental clarity, supports immune function.",
+        "Uses": "Used to reduce exercise-induced stress, support stress reduction, and aid in recovery post-exercise.",
+        "Preparation methods": "Powder form to be filled in empty gel capsules.",
+        "Cautions": "Consult with a healthcare provider before use if pregnant, nursing, or on any medications."
+    },
+    "Cinnamon": {
+        "Properties": "Supports healthy blood sugar levels",
+        "Uses": "Used to enhance energy and support metabolic health",
+        "Preparation Methods": "Powder can be filled into capsules or used in cooking",
+        "Cautions": "Cassia cinnamon in large doses can cause liver issues; Ceylon cinnamon is safer"
+    },
+    "Fenugreek": {
+        "Properties": "Promotes hair density, reduces shedding",
+        "Uses": "Used in hair thickening masks",
+        "Preparation Methods": "Blend soaked fenugreek seeds with amla powder and coconut milk into a paste",
+        "Cautions": "None specified"
+    },
+    "St. John\u2019s Wort": {
+        "Properties": "Soothes nerve pain, supports the nervous system",
+        "Uses": "Used in a salve with Cayenne for nerve pain relief",
+        "Preparation methods": "Simmered in olive oil and combined with beeswax to create a nerve pain salve",
+        "Cautions": "Can interact with a wide range of medications, including antidepressants"
+    },
+    "Lemon Balm": {
+        "Properties": "Calming, supports digestive health.",
+        "Uses": "Promotes relaxation, alleviates digestive discomfort.",
+        "Preparation methods": "Can be used in teas, tinctures, or topical applications.",
+        "Cautions": "May interact with sedatives and thyroid medications."
+    },
+    "Passionflower": {
+        "Properties": "Sedative, supports nervous system health.",
+        "Uses": "Promotes relaxation and sleep, reduces anxiety.",
+        "Preparation methods": "Often consumed as a tea or tincture.",
+        "Cautions": "May cause drowsiness; avoid using when operating heavy machinery."
+    },
+    "Lavender": {
+        "Properties": "Calming, supports skin health.",
+        "Uses": "Promotes relaxation, aids in sleep, and supports skin healing.",
+        "Preparation methods": "Used in aromatherapy, baths, teas, or topical applications.",
+        "Cautions": "Oral consumption should be done with caution; excessive use can lead to gastrointestinal discomfort."
+    },
+    "Herbal Medicine Storage and Maintenance": {
+        "Properties": "N/A",
+        "Uses": "The text outlines the importance of proper storage and maintenance practices for herbs and herbal preparations to preserve their potency and extend their shelf life. Key factors that degrade the quality of herbs include light, heat, and moisture.",
+        "Preparation Methods": "Dried herbs should be stored in dark glass jars or opaque containers to block out light, in a cool, dry place away from direct sunlight and humidity, within a temperature range of 60-70\u00b0F (15-21\u00b0C). Tinctures should be kept in dark glass bottles in a cool, dark place, while infused oils and salves require refrigeration or cool, dry conditions to prevent rancidity and spoilage.",
+        "Cautions": "Regular checks for signs of spoilage are recommended, including discoloration, loss of fragrance, or mold in dried herbs; change in smell or cloudiness in tinctures; and off smell or separation in oils and salves. Spoiled products should be discarded."
+    },
+    "Understanding Body Systems": {
+        "Properties": "N/A",
+        "Uses": "Provides an overview of the major body systems (digestive, respiratory, circulatory, immune, nervous, endocrine, musculoskeletal, and urinary) and their roles in maintaining health and function. Emphasizes the interconnectedness of these systems and the importance of holistic health approaches to address imbalances.",
+        "Preparation Methods": "N/A",
+        "Cautions": "The text suggests that disruptions in one body system can have a ripple effect on others, highlighting the need for a comprehensive understanding of body systems to effectively use herbs and natural remedies for restoring harmony."
+    },
+    "Slippery Elm": {
+        "Properties": "Coats the throat, reduces inflammation, promotes healing.",
+        "Uses": "Effective for soothing allergy-related throat irritation and discomfort.",
+        "Preparation Methods": "Powder form mixed with Licorice Root powder and honey to create lozenges.",
+        "Cautions": "May interfere with the absorption of certain medications."
+    },
+    "Mullein": {
+        "Properties": "Soothes the respiratory tract, expectorant",
+        "Uses": "Relieves coughs, soothes irritated airways",
+        "Preparation Methods": "Steep in hot water for 20 minutes, can add honey",
+        "Cautions": "None specified"
+    },
+    "Hawthorn": {
+        "Properties": "Heart strengthening, blood pressure reducing",
+        "Uses": "Strengthens heart function and enhances circulation.",
+        "Preparation Methods": "Powdered form used in capsules.",
+        "Cautions": "May interact with heart medications."
+    },
+    "Elderberry": {
+        "Properties": "Rich in antioxidants, promotes eye health",
+        "Uses": "Reduces eye inflammation",
+        "Preparation methods": "Steeped in hot water with chamomile for tea",
+        "Cautions": "None mentioned"
+    },
+    "Skullcap": {
+        "Properties": "Calms the nervous system",
+        "Uses": "Reduces stress and prevents emotional eating",
+        "Preparation methods": "Steeped in hot water for tea",
+        "Cautions": "None specified"
+    },
+    "Valerian": {
+        "Properties": "Sedative, promotes restful sleep.",
+        "Uses": "Used to improve sleep quality and reduce the time it takes to fall asleep.",
+        "Preparation methods": "Commonly taken as a capsule, tea, or tincture.",
+        "Cautions": "May interact with sedatives and cause drowsiness."
+    },
+    "Holy Basil": {
+        "Properties": "Adaptogenic, anti-anxiety.",
+        "Uses": "Reduces stress and anxiety, supports immune health.",
+        "Preparation methods": "Commonly consumed as a tea or tincture.",
+        "Cautions": "May lower blood sugar levels; those with diabetes should monitor their blood sugar closely."
+    },
+    "Boswellia": {
+        "Properties": "Supports joint mobility, reduces pain",
+        "Uses": "Promotes healing, reduces inflammation",
+        "Preparation Methods": "Simmered in olive oil for a pain-relief oil or combined with alcohol for a tincture",
+        "Cautions": "May interact with anti-inflammatory and cholesterol-lowering medications."
+    },
+    "Comfrey": {
+        "Properties": "Promotes bone healing, reduces inflammation.",
+        "Uses": "Used in a balm for bone and joint pain.",
+        "Preparation Methods": "Infuse in olive oil with Calendula and beeswax to create a healing balm.",
+        "Cautions": "Not recommended for internal use or on open wounds due to liver toxicity risks."
+    },
+    "Corn silk": {
+        "Properties": "Diuretic, anti-inflammatory",
+        "Uses": "Supports kidney health and reduces inflammation in the urinary tract.",
+        "Preparation methods": "Can be brewed as a tea.",
+        "Cautions": "May interact with diuretics and medications for blood sugar control."
+    },
+    "Uva ursi": {
+        "Properties": "Antimicrobial",
+        "Uses": "Used to treat urinary tract infections and support urinary health.",
+        "Preparation methods": "Typically taken as a supplement or tea.",
+        "Cautions": "Not recommended for long-term use or during pregnancy. Can interact with diuretics and medications that alter urine acidity."
+    },
+    "Dandelion": {
+        "Properties": "Detoxifying, promotes liver health, blood cleanser",
+        "Uses": "Supports detoxification, clears up the skin, reduces acne",
+        "Preparation methods": "Simmer roots in water, strain, cool, and add honey",
+        "Cautions": "May interact with diuretics or lithium"
+    },
+    "Milk thistle": {
+        "Properties": "Liver-protective",
+        "Uses": "Enhances liver detoxification and is protective against liver damage.",
+        "Preparation methods": "Available in capsules, extracts, or teas.",
+        "Cautions": "May interact with medications metabolized by the liver."
+    },
+    "Basil": {
+        "Properties": "Contains calcium, magnesium, and Vitamin K",
+        "Uses": "Boosts bone strength and density",
+        "Preparation Methods": "Mix powder with Thyme powder and fill capsules",
+        "Cautions": "None specified"
+    },
+    "Oregano": {
+        "Properties": "Antimicrobial, supports immune health.",
+        "Uses": "Added to ferments and used in cooking for its health benefits.",
+        "Preparation Methods": "Used fresh or dried in culinary dishes and as an essential oil.",
+        "Cautions": "Essential oil should be diluted before use on skin or in internal applications."
+    },
+    "Cayenne": {
+        "Properties": "Stimulates circulation and metabolism.",
+        "Uses": "Enhances energy, supports weight management.",
+        "Preparation methods": "Steeped in hot water with ginger for 10 minutes.",
+        "Cautions": "Can cause irritation if handled improperly and may upset sensitive stomachs."
+    },
+    "Ginseng": {
+        "Properties": "Increases physical endurance, enhances mental clarity, supports immune health",
+        "Uses": "Consumed before workouts to boost energy and reduce fatigue",
+        "Preparation methods": "Simmer 1 tablespoon of root in water for 20 minutes",
+        "Cautions": "Not recommended for pregnant women or those with autoimmune diseases"
+    },
+    "Guarana": {
+        "Properties": "Increases energy levels, enhances physical performance, and reduces mental fatigue.",
+        "Uses": "Used in a stamina drink to boost energy and performance, especially before exercise.",
+        "Preparation Methods": "Mix guarana powder in cold water, add honey and fresh orange juice.",
+        "Cautions": "High in caffeine; not recommended for children, pregnant or breastfeeding women, or those sensitive to caffeine."
+    },
+    "Cordyceps": {
+        "Properties": "Enhances endurance, supports energy",
+        "Uses": "Used in energy boost capsules for stamina and vitality",
+        "Preparation methods": "Powder mixed with Maca powder for capsule filling",
+        "Cautions": "May interact with certain medications, including those for diabetes and anticoagulants"
+    },
+    "Ginseng (Panax ginseng)": {
+        "Properties": "Enhances energy levels, improves cognitive function, supports stress management, promotes overall vitality.",
+        "Uses": "Taken as a shot in the morning for a quick energy boost and mental alertness.",
+        "Preparation methods": "Mix ginseng powder with warm water, lemon juice, and honey.",
+        "Cautions": "May cause insomnia or headaches in some individuals. Not recommended for pregnant or breastfeeding women."
+    },
+    "Holy Basil (Tulsi)": {
+        "Properties": "Calms the mind, reduces stress, enhances mood by modulating cortisol levels.",
+        "Uses": "Deals with anxiety, mood swings, emotional instability.",
+        "Preparation methods": "Used in teas, capsules, or as an essential oil.",
+        "Cautions": "Considered safe with few known side effects."
+    },
+    "Golden Milk": {
+        "Properties": "Reduces inflammation, supports relaxation, promotes restful sleep.",
+        "Uses": "Drunk in the evening for relaxation and to promote a restful night's sleep.",
+        "Preparation methods": "Heat plant-based milk with turmeric, ashwagandha, cinnamon, and black pepper. Whisk until smooth, remove from heat, and add honey or maple syrup.",
+        "Cautions": "Turmeric may interact with blood-thinning medications. Ashwagandha may potentiate thyroid medications or sedatives."
+    },
+    "Schisandra Berry": {
+        "Properties": "Adaptogen, modulates stress, enhances energy, uplifts mood.",
+        "Uses": "Beneficial for burnout, emotional fatigue, supports adrenal system, enhances mental resilience.",
+        "Preparation methods": "Not specified, but commonly used in teas, tinctures, or capsules.",
+        "Cautions": "Consult with a healthcare provider if pregnant, breastfeeding, or on medication."
+    },
+    "Shatavari": {
+        "Properties": "Balances hormones, enhances bone strength.",
+        "Uses": "Used in Bone-Balancing Tea for hormone balance and bone health.",
+        "Preparation Methods": "Steeped in hot water.",
+        "Cautions": "Generally safe; may have diuretic effects."
+    },
+    "Gotu Kola": {
+        "Properties": "Supports mental focus and enhances endurance.",
+        "Uses": "Used in resilience tea alongside Ashwagandha to reduce fatigue and support mental focus.",
+        "Preparation Methods": "Dried Gotu Kola is simmered with Ashwagandha root for tea preparation.",
+        "Cautions": "Not recommended for pregnant women without consulting a healthcare provider."
+    },
+    "Hibiscus and Rosehip": {
+        "Properties": "Boosts antioxidants, supports vitality.",
+        "Uses": "Combined to make a tea that boosts antioxidant intake and supports overall vitality.",
+        "Preparation Methods": "Steep 1 tablespoon dried hibiscus flowers and 1 tablespoon dried rosehips in 2 cups hot water for 10-15 minutes. Strain and add honey if desired.",
+        "Cautions": "Hibiscus may lower blood pressure significantly and should be used with caution by those with hypotension or on blood pressure medications."
+    },
+    "Tulsi": {
+        "Properties": "Improves skin tone, enhances skin elasticity.",
+        "Uses": "Used in a face serum for collagen production and reducing signs of aging.",
+        "Preparation Methods": "Infused in oil.",
+        "Cautions": "None specified."
+    },
+    "Yerba Mate": {
+        "Properties": "Stimulates metabolism.",
+        "Uses": "Increases energy, supports mental alertness.",
+        "Preparation methods": "Steeped in hot water with Ginseng.",
+        "Cautions": "Contains caffeine, which may affect sleep or cause jitteriness in some individuals."
+    },
+    "Ginkgo Biloba": {
+        "Properties": "Enhances circulation to the eyes, supports visual function",
+        "Uses": "Ideal for age-related eye conditions",
+        "Preparation Methods": "Used in various formulations to support eye health",
+        "Cautions": "None specified"
+    },
+    "Beetroot": {
+        "Properties": "High in nitrates that improve blood flow",
+        "Uses": "Boosts nitric oxide levels, enhances performance, reduces muscle soreness",
+        "Preparation methods": "Mix 1/4 cup of Beetroot juice with grated Ginger and water for a Pre-Workout Tonic",
+        "Cautions": "Consuming large amounts might cause the urine or stool to turn pink or red"
+    },
+    "Bacopa": {
+        "Properties": "Supports memory and learning",
+        "Uses": "Found in cognitive support capsules",
+        "Preparation Methods": "Powdered form mixed with other herbs for capsules",
+        "Cautions": "None specified, but may interact with certain medications"
+    },
+    "Siberian Ginseng": {
+        "Properties": "Enhances stamina, supports adrenal health",
+        "Uses": "Used to reduce fatigue and combat stress",
+        "Preparation Methods": "Commonly consumed in tea or capsule form",
+        "Cautions": "May cause insomnia or high blood pressure in sensitive individuals"
+    },
+    "Suma Root": {
+        "Properties": "Enhances energy, supports stamina, balances hormones",
+        "Uses": "Boosting energy, enhancing overall vitality and immune support",
+        "Preparation Methods": "Dried powder mixed into warm water with honey",
+        "Cautions": "None specified"
+    },
+    "Cacao": {
+        "Properties": "Enhances energy and mood.",
+        "Uses": "Energy-boosting, mood-enhancing.",
+        "Preparation methods": "Powder mixed into warm almond milk with Maca.",
+        "Cautions": "Contains caffeine and theobromine, which may cause jitteriness or sleep disturbances."
+    },
+    "Oatstraw": {
+        "Properties": "Nutritive, supports nervous system health.",
+        "Uses": "Promotes relaxation, supports emotional well-being.",
+        "Preparation methods": "Commonly prepared as a tea or infusion.",
+        "Cautions": "Generally considered safe, but it's advisable to consult with a healthcare provider for long-term use."
+    },
+    "Matcha Green Tea": {
+        "Properties": "Contains antioxidants, provides sustained energy, enhances focus, and boosts metabolism.",
+        "Uses": "Used for a natural energy boost, mental clarity, and improving focus.",
+        "Preparation Methods": "Whisk matcha powder into hot water until frothy, then add raw honey if desired.",
+        "Cautions": "May contain caffeine; avoid consuming in large amounts or late in the day to prevent sleep disturbances."
+    },
+    "Damiana": {
+        "Properties": "Enhances libido, balances hormones, supports reproductive health.",
+        "Uses": "Consumed to enhance libido and support hormonal balance.",
+        "Preparation Methods": "Steep dried damiana leaves in hot water, strain, then add lemon juice and honey.",
+        "Cautions": "Consult with a healthcare provider before use, especially if pregnant, nursing, or on medication."
+    },
+    "Cat\u2019s Claw": {
+        "Properties": "Antiviral, anti-inflammatory",
+        "Uses": "Reduces inflammation, supports immune health",
+        "Preparation methods": "Simmered in water for tea",
+        "Cautions": "May interact with certain medications and is not recommended for pregnant women"
+    },
+    "Goji Berry": {
+        "Properties": "Rich in antioxidants, supports healthy vision",
+        "Uses": "Smoothie ingredient for eye health",
+        "Preparation Methods": "Blended",
+        "Cautions": "None specified"
+    },
+    "Mugwort": {
+        "Properties": "Promotes vivid dreams, supports restful sleep, may enhance dream recall.",
+        "Uses": "Consumed before bedtime to enhance dream clarity and support restful sleep.",
+        "Preparation Methods": "Steep 1 teaspoon dried mugwort (and peppermint for added benefits) in 1 cup hot water for 10 minutes, then strain before drinking.",
+        "Cautions": "Should be avoided during pregnancy due to potential stimulant effects on the uterus."
+    },
+    "Lemon Verbena": {
+        "Properties": "Calms and invigorates the senses.",
+        "Uses": "Refreshes and invigorates body and mind.",
+        "Preparation methods": "Steeped with Peppermint in hot water for 10-15 minutes.",
+        "Cautions": "Rare, but may cause skin irritation or nausea."
+    },
+    "Kava Kava": {
+        "Properties": "Reduces anxiety, promotes relaxation, helps relieve muscle tension.",
+        "Uses": "Used to reduce stress and promote relaxation, particularly effective for anxiety-related disorders.",
+        "Preparation Methods": "Mix 1 teaspoon dried kava root powder in 1 cup warm water until dissolved, add 1 teaspoon raw honey and stir well.",
+        "Cautions": "May cause liver damage if used in large amounts or for extended periods. Not recommended for use with alcohol or other medications that affect the liver."
+    },
+    "Valerian Root": {
+        "Properties": "Reduces stress, supports emotional well-being",
+        "Uses": "Effective for emotional stability",
+        "Preparation methods": "Typically used in tea blends for its calming effects",
+        "Cautions": "May cause drowsiness; not recommended before operating heavy machinery"
+    },
+    "Chamomile and Lavender": {
+        "Properties": "Calming, nervine, reduces anxiety, promotes restful sleep.",
+        "Uses": "Reducing anxiety, promoting deep, restful sleep.",
+        "Preparation Methods": "Tea made by steeping dried chamomile flowers and lavender buds in hot water, then strained and sweetened with honey if desired.",
+        "Cautions": "Chamomile may cause allergic reactions in individuals sensitive to the Asteraceae/Compositae family. Lavender used in large amounts may cause sedation."
+    },
+    "Turmeric and Black Pepper": {
+        "Properties": "Anti-inflammatory, increases bioavailability of curcumin in turmeric.",
+        "Uses": "Used to reduce inflammation and manage pain.",
+        "Preparation Methods": "Often combined in capsules or added to food together to enhance absorption.",
+        "Cautions": "May interact with blood-thinning medications due to turmeric's anti-inflammatory properties."
+    },
+    "Extraction Techniques": {
+        "Infusions": {
+            "Description": "Simple method using hot water to extract volatile oils, vitamins, and delicate compounds from leaves, flowers, and soft plant parts",
+            "Examples": "Chamomile, peppermint, nettle"
+        },
+        "Decoctions": {
+            "Description": "Robust method using prolonged boiling to extract medicinal properties from tough plant materials like roots, barks, and seeds",
+            "Examples": "Not specified in the provided text but typically used for harder materials"
+        },
+        "Tinctures": {
+            "Description": "Alcohol or vinegar-based extracts that preserve and concentrate the active compounds of herbs",
+            "Examples": "Not directly mentioned but applicable to a wide range of herbs"
+        },
+        "Glycerites": {
+            "Description": "Glycerin-based extracts suitable for those avoiding alcohol, preserving and extracting active compounds",
+            "Examples": "Not directly mentioned but suitable for various herbs"
+        },
+        "Oil Infusions": {
+            "Description": "Herbs infused in oil to extract lipid-soluble compounds, used topically or in cooking",
+            "Examples": "Not directly mentioned but applicable to herbs like calendula or St. John's wort"
+        }
+    },
+    "Cinnamon Bark": {
+        "Properties": "Antimicrobial, anti-inflammatory, and has the ability to regulate blood sugar levels.",
+        "Uses": "Widely used to improve digestive health, reduce blood sugar levels, and as a warming herb in cold conditions.",
+        "Preparation Methods": "Decoction, to release its potent active ingredients effectively.",
+        "Cautions": "High doses can be toxic, and it may interact with blood thinners and diabetes medication."
+    },
+    "Plantain": {
+        "Properties": "Reduces redness and irritation",
+        "Uses": "Soothes eczema-prone areas",
+        "Preparation Methods": "Cream made by infusing Plantain in coconut oil, blended with beeswax",
+        "Cautions": "None specified"
+    },
+    "Andrographis": {
+        "Properties": "Reduces severity and duration of colds and flu, supports immune function, enhances body defenses.",
+        "Uses": "Drunk at the first sign of cold or flu symptoms.",
+        "Preparation methods": "Tea made by steeping dried andrographis leaves in hot water, then adding honey and lemon juice.",
+        "Cautions": "May cause allergic reactions and interact with medications that affect the immune system."
+    },
+    "Tea Tree": {
+        "Properties": "Antimicrobial",
+        "Uses": "Used in hand wash to enhance antimicrobial effectiveness.",
+        "Preparation Methods": "As an essential oil in hand wash.",
+        "Cautions": "May cause skin irritation in some individuals; patch test before widespread use."
+    },
+    "Astragalus Root": {
+        "Properties": "Enhances immune function, supports spleen and lymphatic system, promotes overall vitality.",
+        "Uses": "Drunk as a tea for long-term immune support, especially during cold and flu season.",
+        "Preparation methods": "Tea made by simmering dried astragalus root in water for 20-30 minutes.",
+        "Cautions": "May interact with medications that suppress the immune system."
+    },
+    "Garlic and Honey": {
+        "Properties": "Antimicrobial, combines soothing and immune-supporting effects of honey.",
+        "Uses": "Taken for immune support or when experiencing cold or flu symptoms.",
+        "Preparation methods": "Infusion made by covering peeled garlic cloves with raw honey and letting it sit for 1-2 weeks.",
+        "Cautions": "Garlic can interact with certain medications, including blood thinners."
+    },
+    "Ginger and Turmeric Golden Milk": {
+        "Properties": "Anti-inflammatory, immune-boosting, supports overall health, reduces inflammation, promotes restful sleep.",
+        "Uses": "Drunk daily, preferably in the evening, for immune health and inflammation reduction.",
+        "Preparation methods": "Heated coconut milk mixed with turmeric, ginger, cinnamon, black pepper, and honey.",
+        "Cautions": "Turmeric can interact with blood-thinning medications."
+    },
+    "Tulsi and Lemon Balm": {
+        "Properties": "Adaptogenic, supports immune health, reduces stress.",
+        "Uses": "Drunk as a tea for immune support and stress reduction.",
+        "Preparation methods": "Tea made by steeping dried tulsi and lemon balm leaves in hot water, then adding honey.",
+        "Cautions": "May interact with sedatives and other medications."
+    },
+    "Fire Cider Tonic": {
+        "Properties": "Antimicrobial, anti-inflammatory, immune-supporting.",
+        "Uses": "Boosts immunity, supports respiratory health, reduces inflammation.",
+        "Preparation Methods": "Combine ingredients like apple cider vinegar, horseradish, ginger, garlic, cayenne pepper, and honey in a jar for 4-6 weeks.",
+        "Cautions": "None specified."
+    },
+    "Olive Leaf": {
+        "Properties": "Antimicrobial, immune-supporting",
+        "Uses": "Used in a throat gargle to reduce throat infections and soothe irritation.",
+        "Preparation Methods": "Steeped in hot water with echinacea root, cooled, then sea salt is added.",
+        "Cautions": "None specified"
+    },
+    "Oregano Oil": {
+        "Properties": "Antiviral, antibacterial, contains high levels of carvacrol.",
+        "Uses": "Used for immune support and to inhibit viral replication, particularly during acute viral infections.",
+        "Preparation Methods": "Capsule form, diluted topical treatment.",
+        "Cautions": "Should be used with caution internally and for short-term treatment due to its potency."
+    },
+    "Rosehip": {
+        "Properties": "High in antioxidants",
+        "Uses": "Promotes clear vision and reduces free radical damage",
+        "Preparation methods": "Steep with blueberries in hot water for 15 minutes, strain and serve warm",
+        "Cautions": "None mentioned"
+    },
+    "Hibiscus": {
+        "Properties": "Promotes stronger hair and prevents premature graying.",
+        "Uses": "Used in a hair strengthening mask with amla and yogurt.",
+        "Preparation Methods": "Mixed with amla powder and yogurt to form a paste.",
+        "Cautions": "Test for allergic reactions before widespread use."
+    },
+    "Elderflower": {
+        "Properties": "Soothes puffy eyes, reduces inflammation.",
+        "Uses": "Used in an eye compress with Chamomile to relieve puffiness.",
+        "Preparation methods": "Steeped in hot water, then used to soak cotton pads.",
+        "Cautions": "Generally considered safe, but always test for allergic reactions."
+    },
+    "Sage": {
+        "Properties": "Supports bone strength, balances hormones.",
+        "Uses": "Used in a tea to enhance bone density and hormonal health.",
+        "Preparation Methods": "Steep 1 tablespoon dried Sage in 2 cups hot water for 15 minutes.",
+        "Cautions": "Excessive consumption can lead to dry mouth and throat."
+    },
+    "Propolis and Honey Throat Spray": {
+        "Properties": "Antimicrobial, immune-supporting, soothes the throat",
+        "Uses": "Soothing sore throats, providing antibacterial support during colds",
+        "Preparation Methods": "Mix propolis tincture, raw honey, and warm water, transfer to a spray bottle",
+        "Cautions": "Check for allergies to bee products before use"
+    },
+    "Yarrow and Peppermint Fever-Reducing Tea": {
+        "Properties": "Induces sweating, cools the body, soothes the digestive system",
+        "Uses": "Reduces fever, promotes sweating",
+        "Preparation methods": "Steep dried yarrow and peppermint in hot water, strain, and serve warm.",
+        "Cautions": "Yarrow can be allergenic to some; avoid if allergic to ragweed. Peppermint may worsen acid reflux in some individuals."
+    },
+    "Maitake Mushroom Immunity Soup": {
+        "Properties": "Immune support, antimicrobial, anti-inflammatory",
+        "Uses": "Boosts immunity, enhances vitality",
+        "Preparation methods": "Simmer maitake mushrooms, vegetable broth, ginger, and garlic. Add miso paste and green onions before serving.",
+        "Cautions": "Miso paste is high in sodium; consume in moderation if monitoring sodium intake."
+    },
+    "Chaga Mushroom and Cacao Elixir": {
+        "Properties": "Antioxidant-rich, immune-supporting, mood-boosting",
+        "Uses": "Supports immune system, enhances energy",
+        "Preparation methods": "Steep chaga powder in hot water, blend with cacao, coconut oil, and honey.",
+        "Cautions": "Consult with a healthcare provider if you have a mushroom allergy or are taking medication, as chaga can interact with some medications."
+    },
+    "Black Seed Oil Immune Booster": {
+        "Properties": "Anti-inflammatory, immune-boosting",
+        "Uses": "Supports immune system, reduces inflammation",
+        "Preparation methods": "Mix black seed oil with raw honey.",
+        "Cautions": "Black seed oil can interact with medication and may not be suitable for pregnant women."
+    },
+    "Thyme and Sage Herbal Gargle": {
+        "Properties": "Antimicrobial, anti-inflammatory",
+        "Uses": "Soothes sore throats, fights bacterial and viral infections",
+        "Preparation methods": "Steep thyme and sage in boiling water, add salt, cool before gargling.",
+        "Cautions": "Sage should be used cautiously by nursing mothers as it can reduce milk supply."
+    },
+    "Marshmallow Root and Licorice Throat Soother": {
+        "Properties": "Soothes irritated tissues, antiviral, anti-inflammatory",
+        "Uses": "Soothes sore throats, supports respiratory health",
+        "Preparation methods": "Steep marshmallow and licorice roots in hot water, strain, add honey.",
+        "Cautions": "Licorice root can elevate blood pressure if consumed in large quantities over a long period."
+    },
+    "Elderflower and Linden Cold Relief Tea": {
+        "Properties": "Soothing, supportive for colds",
+        "Uses": "Relief from cold symptoms",
+        "Preparation methods": "Steep elderflower and linden in hot water, strain, add honey.",
+        "Cautions": "Elderflower is generally safe, but care should be taken as the raw plant contains toxic substances that are removed during cooking or drying."
+    },
+    "Linden": {
+        "Properties": "Calms the nervous system, reduces inflammation",
+        "Uses": "Managing stress, promoting immune balance",
+        "Preparation methods": "Tea with Chamomile and honey",
+        "Cautions": "Rarely, may cause heart damage if consumed in excessive quantities"
+    },
+    "Clove": {
+        "Properties": "Reduces pain and inflammation",
+        "Uses": "Used in a tincture to alleviate muscle pain and tension headaches",
+        "Preparation methods": "Combined with Peppermint in alcohol to create a tension relief tincture",
+        "Cautions": "May irritate the skin and mucous membranes; use with caution"
+    },
+    "Black Pepper": {
+        "Properties": "Enhances absorption of Turmeric",
+        "Uses": "Combined with Turmeric for anti-inflammatory effects",
+        "Preparation methods": "Steeped together with Turmeric",
+        "Cautions": "Excessive consumption may lead to gastrointestinal irritation"
+    },
+    "Yellow Dock Root": {
+        "Properties": "Blood-purifying, enhances liver function.",
+        "Uses": "Supports liver detoxification, improves overall liver health.",
+        "Preparation Methods": "Dried form, simmered in water for tonic.",
+        "Cautions": "None specified."
+    },
+    "Osha Root": {
+        "Properties": "Antimicrobial, soothes the respiratory tract",
+        "Uses": "Relieves respiratory congestion, supports respiratory health",
+        "Preparation Methods": "Simmered in water to make a tea, sweetened with honey",
+        "Cautions": "Not well studied in pregnant or nursing women; use caution"
+    },
+    "Schisandra": {
+        "Properties": "Reduces cortisol, supports immune function",
+        "Uses": "Part of a stress-relief tea to enhance recovery",
+        "Preparation methods": "Simmered with Reishi mushroom in water",
+        "Cautions": "May cause gastrointestinal upset in some individuals"
+    },
+    "Yarrow": {
+        "Properties": "Anti-inflammatory, astringent, healing",
+        "Uses": "Reduces itching, soothes irritation, promotes skin healing",
+        "Preparation methods": "Infuse in olive oil, blend with beeswax",
+        "Cautions": "May cause photosensitivity; avoid direct sunlight after application"
+    },
+    "Maitake Mushroom": {
+        "Properties": "Immune-boosting",
+        "Uses": "Enhances immune cell function, protects against viral infections",
+        "Preparation methods": "Soups, broths, tea",
+        "Cautions": "May interact with diabetes and blood-thinning medications"
+    },
+    "Honey": {
+        "Properties": "Speeds up healing.",
+        "Uses": "Part of an anti-acne spot treatment.",
+        "Preparation Methods": "Mixed into a paste with turmeric.",
+        "Cautions": "None specified."
+    },
+    "Horseradish": {
+        "Properties": "Decongestant",
+        "Uses": "Clearing nasal congestion, supporting respiratory health",
+        "Preparation Methods": "Mixed with other ingredients to make a tonic",
+        "Cautions": "May irritate the stomach lining or mucous membranes"
+    },
+    "Hyssop": {
+        "Properties": "Helps clear mucus, reduces congestion",
+        "Uses": "Supports respiratory health, clears congestion",
+        "Preparation methods": "Dried steeped in hot water with mullein and optionally sweetened with honey.",
+        "Cautions": "None specified"
+    },
+    "Goldenseal": {
+        "Properties": "Reduces inflammation, fights infections.",
+        "Uses": "Combined with Eyebright in eye drops for irritated eyes.",
+        "Preparation methods": "Simmered with Eyebright and strained for eye drops.",
+        "Cautions": "Can interact with certain medications and is not recommended during pregnancy."
+    },
+    "Propolis": {
+        "Properties": "Antibacterial, antiviral",
+        "Uses": "Effective against Gram-positive and Gram-negative bacteria, used for respiratory and oral infections",
+        "Preparation Methods": "Found in throat sprays, tinctures, and lozenges",
+        "Cautions": "People with allergies to bee products or severe allergies should use with caution"
+    },
+    "Chaga Mushroom": {
+        "Properties": "Adaptogen, supports immune health, anti-inflammatory",
+        "Uses": "Used in immune-supporting brews",
+        "Preparation methods": "Dried chunks simmered in water",
+        "Cautions": "Potential interactions with insulin or blood-thinning medications"
+    },
+    "Black Seed Oil": {
+        "Properties": "Anti-inflammatory, antioxidant",
+        "Uses": "Supports immune health, reduces inflammation, and is effective for managing chronic inflammation.",
+        "Preparation methods": "Mixed with raw honey to create an anti-inflammatory tonic.",
+        "Cautions": "While generally safe, it's important to use in moderation and be aware of potential allergic reactions."
+    },
+    "Onion": {
+        "Properties": "Natural expectorant, soothes coughs, reduces mucus",
+        "Uses": "Used in cough syrups for its expectorant properties",
+        "Preparation methods": "Sliced and infused with honey",
+        "Cautions": "Generally safe, but raw onion can cause digestive discomfort in some"
+    },
+    "Burdock": {
+        "Properties": "Rich in Vitamin A",
+        "Uses": "Supporting mucous membrane health, aiding immune cell development",
+        "Preparation methods": "Roots can be eaten cooked, used in teas, or taken as a supplement",
+        "Cautions": "Possible allergen for those sensitive to certain flowers and herbs"
+    },
+    "Yellow Dock": {
+        "Properties": "Cleanses the blood, supports liver function",
+        "Uses": "Reducing the toxic load that can trigger allergic reactions",
+        "Preparation Methods": "Simmer dried root in hot water for 15 minutes with Burdock, strain, and serve warm",
+        "Cautions": "None specified"
+    },
+    "Apple Cider Vinegar": {
+        "Properties": "Detoxifying",
+        "Uses": "Used in a sinus tonic for sinus relief and immune support.",
+        "Preparation methods": "Combined with garlic, ginger, lemon juice, and cayenne pepper, stored for 1-2 weeks, shaken daily, strained, and stored in a glass bottle.",
+        "Cautions": "None specified"
+    },
+    "Osha": {
+        "Properties": "Cough soothing",
+        "Uses": "Used in a cough syrup to soothe coughs.",
+        "Preparation methods": "Combined with wild cherry bark and water, boiled, simmered, strained, reduced, and honey added.",
+        "Cautions": "None specified"
+    },
+    "Wild Cherry Bark": {
+        "Properties": "Cough soothing",
+        "Uses": "Used in combination with osha root in a cough syrup to soothe coughs.",
+        "Preparation methods": "Combined with osha root and water, boiled, simmered, strained, reduced, and honey added.",
+        "Cautions": "None specified"
+    },
+    "Horehound and Licorice Root": {
+        "Properties": "Expectorant (horehound), soothing and antiviral (licorice root).",
+        "Uses": "Soothing sore throats, reducing coughing.",
+        "Preparation Methods": "Cough drops made by simmering dried horehound and licorice root in water, then adding honey and allowing the mixture to thicken before pouring into molds.",
+        "Cautions": "Licorice root may increase blood pressure if taken in large amounts or for an extended period."
+    },
+    "Fenugreek and Thyme": {
+        "Properties": "Clears mucus, soothes respiratory system, antimicrobial",
+        "Uses": "Clears sinuses, supports respiratory health",
+        "Preparation methods": "Slightly crush fenugreek seeds, steep with thyme in hot water for 10-15 minutes, strain, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Elderberry and Ginger": {
+        "Properties": "Antioxidant, supports immune system, alleviates respiratory congestion",
+        "Uses": "Reduces duration of colds and flu, supports overall immune health",
+        "Preparation Methods": "Syrup made from boiled elderberries and ginger, reduced and mixed with honey",
+        "Cautions": "Elderberry should not be consumed uncooked; rare cases of allergic reactions may occur"
+    },
+    "Sage and Lemon": {
+        "Properties": "Astringent, antimicrobial, reduces throat irritation and inflammation.",
+        "Uses": "Soothing sore throats, fighting infection.",
+        "Preparation Methods": "Gargle solution made by steeping dried sage in hot water, then adding lemon juice and salt.",
+        "Cautions": "Sage should be used with caution by nursing mothers as it can decrease milk supply."
+    },
+    "Turmeric and Ginger": {
+        "Properties": "Immune support, anti-inflammatory.",
+        "Uses": "Immune support, reducing inflammation.",
+        "Preparation Methods": "Golden paste made by gently heating turmeric, grated fresh ginger, and black pepper in water until thick, then adding coconut oil.",
+        "Cautions": "Turmeric can slow blood clotting and might interact with anticoagulant medications. Ginger in large doses may cause heartburn or stomach upset."
+    },
+    "Lemongrass": {
+        "Properties": "Anti-inflammatory, supports digestive health",
+        "Uses": "Reduces bloating, soothes digestive tract, alleviates pain",
+        "Preparation Methods": "Steep in hot water with ginger, can be sweetened with honey",
+        "Cautions": "None specified"
+    },
+    "Bay Leaf": {
+        "Properties": "Not specified",
+        "Uses": "Steam inhalation for respiratory support",
+        "Preparation Methods": "Steam inhalation with boiling water and eucalyptus",
+        "Cautions": "None specified"
+    },
+    "Usnea": {
+        "Properties": "Antimicrobial",
+        "Uses": "Used in a herbal wash for cuts, scrapes, and minor wounds to prevent infections and support tissue repair.",
+        "Preparation Methods": "Simmered in water with yarrow, then strained and cooled for use.",
+        "Cautions": "None specified"
+    },
+    "Myrrh": {
+        "Properties": "Antimicrobial, astringent, anti-inflammatory",
+        "Uses": "Reducing gum inflammation, preventing infections, promoting gum health",
+        "Preparation methods": "Dried powder mixed with goldenseal powder and sea salt for a gum health powder",
+        "Cautions": "Should not be ingested in large quantities; can be toxic"
+    },
+    "Berberine-containing herbs": {
+        "Common name": "Oregon grape, Barberry, Goldenseal",
+        "Properties": "Contain berberine, effective against various bacteria including H. pylori, E. coli, and MRSA by disrupting bacterial cell walls and inhibiting enzyme function.",
+        "Uses": "Commonly used for digestive and respiratory infections.",
+        "Preparation methods": "Specific preparation methods not detailed, but typically used in tincture or capsule form.",
+        "Cautions": "Can cause digestive upset in some individuals and may interact with medications. Not recommended for pregnant or breastfeeding women."
+    },
+    "Tea tree oil": {
+        "Common name": "Tea tree oil",
+        "Properties": "Potent antimicrobial, antibacterial, and antiviral.",
+        "Uses": "Used topically for skin infections, acne, and fungal conditions.",
+        "Preparation methods": "Should always be diluted before applying to the skin to avoid irritation.",
+        "Cautions": "Should not be ingested and should be used with caution on sensitive skin."
+    },
+    "Garlic and Honey Antimicrobial Tonic": {
+        "Ingredients": "Raw honey, garlic cloves",
+        "Uses": "Immune support and fighting bacterial and viral infections.",
+        "Preparation methods": "Garlic cloves are peeled, crushed, and infused in honey for 1-2 weeks.",
+        "Benefits": "Combines garlic's antimicrobial properties with honey's soothing and immune-boosting effects.",
+        "Cautions": "People with allergies to garlic or honey should avoid this remedy."
+    },
+    "Echinacea and Goldenseal Immune Tincture": {
+        "Ingredients": "Dried echinacea root, dried goldenseal root, vodka or brandy",
+        "Uses": "Immune support and fighting infections such as colds and flu.",
+        "Preparation methods": "Roots are soaked in alcohol for 4-6 weeks, then strained for use.",
+        "Benefits": "Echinacea boosts immune function while goldenseal provides antimicrobial effects.",
+        "Cautions": "Not recommended for prolonged use or for pregnant or breastfeeding women."
+    },
+    "Elderberry and Ginger Immune Syrup": {
+        "Ingredients": "Dried elderberries, fresh ginger, raw honey",
+        "Uses": "Prevention and treatment at the first sign of illness.",
+        "Preparation methods": "Elderberries and ginger are simmered, then mixed with honey after straining.",
+        "Benefits": "Elderberry and ginger offer immune-boosting properties.",
+        "Cautions": "Raw honey should not be given to children under 1 year of age."
+    },
+    "Horehound": {
+        "Properties": "Expectorant",
+        "Uses": "Soothing sore throats, reducing coughing, clearing mucus",
+        "Preparation Methods": "Cough drops made by simmering dried horehound with licorice root, water, and honey",
+        "Cautions": "May cause hypoglycemia in large doses; not recommended for pregnant women"
+    },
+    "Barberry Root": {
+        "Properties": "Antimicrobial, contains berberine",
+        "Uses": "Supports the body\u2019s defenses against infections",
+        "Preparation Methods": "Tincture made by macerating dried root in alcohol, often combined with Oregon grape root",
+        "Cautions": "Avoid during pregnancy"
+    },
+    "Elecampane": {
+        "Properties": "Soothes irritated respiratory tissues, reduces inflammation, promotes expectoration",
+        "Uses": "Clearing stubborn coughs",
+        "Preparation methods": "Cough elixir made with dried elecampane root, dried licorice root, water, and raw honey",
+        "Cautions": "None specified"
+    },
+    "Licorice": {
+        "Properties": "Helps restore adrenal health",
+        "Uses": "Supports adrenal function and reduces stress",
+        "Preparation methods": "Root form for tea",
+        "Cautions": "None specified"
+    },
+    "Bayberry": {
+        "Properties": "Astringent, antimicrobial",
+        "Uses": "Reducing throat irritation, fighting infections",
+        "Preparation methods": "Throat gargle made with dried bayberry root, dried sage, hot water, and sea salt",
+        "Cautions": "None specified"
+    },
+    "Butterbur": {
+        "Properties": "Reduces inflammation, prevents histamine release",
+        "Uses": "Effective for managing respiratory allergies such as asthma and hay fever",
+        "Preparation methods": "Powdered for capsule use",
+        "Cautions": "Raw plant contains harmful substances; only use processed forms free of pyrrolizidine alkaloids (PAs)"
+    },
+    "Quercetin": {
+        "Properties": "Stabilizes mast cells, reduces inflammation",
+        "Uses": "Used with Butterbur for respiratory support capsules",
+        "Preparation methods": "Powdered for capsule use",
+        "Cautions": "May interact with certain medications, including blood thinners and chemotherapy drugs"
+    },
+    "Eyebright": {
+        "Properties": "Reduces redness, soothes irritation, supports eye health",
+        "Uses": "Used in capsules, tea, and eye drops for eye health",
+        "Preparation Methods": "Powdered for capsules, steeped for tea, simmered for eye drops",
+        "Cautions": "None specified"
+    },
+    "Goldenrod": {
+        "Properties": "Reduces oxidative stress, enhances blood flow",
+        "Uses": "Supports healthy vision",
+        "Preparation methods": "Dried powder mixed with sage powder to fill capsules",
+        "Cautions": "None mentioned"
+    },
+    "Green Tea": {
+        "Properties": "Anti-inflammatory, antioxidant protection",
+        "Uses": "Reduces skin redness and inflammation",
+        "Preparation Methods": "Toner made by steeping 1 tablespoon Green Tea leaves in 1 cup hot water for 10 minutes, then mixed with Aloe Vera gel",
+        "Cautions": "None specified"
+    },
+    "Bromelain": {
+        "Properties": "Anti-allergy",
+        "Uses": "Combined with Quercetin for enhanced anti-allergy effects",
+        "Preparation Methods": "Powder form, specific preparation not detailed",
+        "Cautions": "None mentioned"
+    },
+    "Marshmallow root": {
+        "Properties": "Soothing, reduces inflammation in mucous membranes, forms a protective layer over irritated tissues.",
+        "Uses": "Ideal for individuals with respiratory or digestive allergies. It can help soothe the mucous membranes and alleviate irritation.",
+        "Preparation methods": "Can be used in teas, tinctures, or as a powder added to smoothies.",
+        "Cautions": "None mentioned, but as with all herbs, it should be used with caution in individuals with specific allergies or conditions."
+    },
+    "Reishi": {
+        "Properties": "Adaptogenic, supports immune function, enhances mental clarity.",
+        "Uses": "Used in combination with Eleuthero to support stress reduction, particularly after exercise.",
+        "Preparation methods": "Powder form to be filled in empty gel capsules.",
+        "Cautions": "May interact with blood thinning medications or immune-suppressing drugs. Consult with a healthcare provider before use."
+    },
+    "Nettle and Dandelion Tea": {
+        "Properties": "Rich in vitamins and minerals, supports liver detoxification, reduces inflammation, promotes healthy blood flow.",
+        "Uses": "Supports liver function, promotes detoxification, cleanse and support overall health.",
+        "Preparation Methods": "Steep lion root in hot water for 15 minutes, strain, and add lemon juice.",
+        "Cautions": "None specified."
+    },
+    "Elderberry and Echinacea Syrup": {
+        "Properties": "Immune-boosting, antiviral.",
+        "Uses": "Reduces the duration and severity of colds and flu, supports immune system.",
+        "Preparation Methods": "Boil elderberries, echinacea root, and water, simmer for 30 minutes, strain, reduce liquid by half, remove from heat, and stir in honey.",
+        "Cautions": "None specified."
+    },
+    "Chamomile and Lavender Tea": {
+        "Properties": "Calming, reduces anxiety and inflammation.",
+        "Uses": "Promotes relaxation, reduces stress-related inflammation, promotes restful sleep.",
+        "Preparation Methods": "Steep chamomile and lavender in hot water for 15 minutes, strain, and add honey if desired.",
+        "Cautions": "None specified."
+    },
+    "Devil\u2019s Claw and Ginger Capsules": {
+        "Properties": "Anti-inflammatory, enhances circulation.",
+        "Uses": "Reduces joint inflammation, alleviates pain, manages arthritis and other inflammatory joint conditions.",
+        "Preparation Methods": "Mix Devil\u2019s Claw and ginger root powders, fill empty vegetable capsules.",
+        "Cautions": "None specified."
+    },
+    "Turmeric and Ginger Golden Milk": {
+        "Properties": "Anti-inflammatory, calming effects.",
+        "Uses": "Reduces inflammation, promotes relaxation, reduces chronic inflammation, promotes restful sleep.",
+        "Preparation Methods": "Heat almond milk, turmeric, ginger, and cinnamon gently, stirring continuously, remove from heat and stir in honey.",
+        "Cautions": "None specified."
+    },
+    "Gotu Kola and Licorice Tea": {
+        "Properties": "Anti-inflammatory, promotes wound healing, soothes irritated tissues, modulates immune response.",
+        "Uses": "Reduces inflammation, supports immune health, beneficial for conditions such as psoriasis and eczema.",
+        "Preparation Methods": "Steep Gotu Kola leaves and licorice root in hot water for 15 minutes, strain, and add lemon juice.",
+        "Cautions": "None specified."
+    },
+    "Cinnamon and Clove Tea": {
+        "Properties": "Antioxidant.",
+        "Uses": "Not specified, but generally known for reducing inflammation and supporting immune health.",
+        "Preparation Methods": "Steep a cinnamon stick and whole cloves in hot water, strain, and add honey.",
+        "Cautions": "None specified."
+    },
+    "Cinnamon and Clove": {
+        "Properties": "Rich in antioxidants, strong anti-inflammatory",
+        "Uses": "Reduces oxidative stress, supports immune function",
+        "Preparation methods": "Steep in hot water for 10-15 minutes, strain, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Milk Thistle and Burdock Root": {
+        "Properties": "Liver-supporting, detoxifying",
+        "Uses": "Supports liver health, promotes detoxification, reduces inflammation, promotes healthy digestion",
+        "Preparation methods": "Simmer in water for 20-30 minutes, strain, serve warm",
+        "Cautions": "None specified"
+    },
+    "Holy Basil and Lemon Balm": {
+        "Properties": "Adaptogenic, reduces stress, calming",
+        "Uses": "Reduces stress, promotes relaxation, supports mental and emotional health",
+        "Preparation methods": "Steep in hot water for 10-15 minutes, strain, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Calendula and Plantain": {
+        "Properties": "Anti-inflammatory, antimicrobial, wound-healing",
+        "Uses": "Soothes irritated skin, promotes faster healing of minor cuts, scrapes, and burns",
+        "Preparation methods": "Gently heat in olive oil for 1 hour, strain, return to saucepan, add beeswax, stir until melted, remove from heat, stir in tea tree oil, pour into jars, let solidify",
+        "Cautions": "None specified"
+    },
+    "Passionflower and Skullcap": {
+        "Properties": "Nervine, reduces anxiety, alleviates nerve-related inflammation",
+        "Uses": "Calms the nervous system, supports emotional well-being, promotes restful sleep",
+        "Preparation methods": "Steep in hot water for 10-15 minutes, strain, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Aloe Vera and Peppermint": {
+        "Properties": "Soothes and heals the digestive system, reduces inflammation",
+        "Uses": "Soothes digestive discomfort before meals",
+        "Preparation methods": "Mix fresh aloe vera gel with peppermint oil until well combined, store in refrigerator",
+        "Cautions": "None specified"
+    },
+    "Rosehips": {
+        "Properties": "High in essential nutrients",
+        "Uses": "Supports overall immune health",
+        "Preparation methods": "Can be used in teas, syrups, or as a supplement",
+        "Cautions": "None specified"
+    },
+    "Chaga": {
+        "Properties": "Adaptogenic, modulates the immune system, promotes vitality",
+        "Uses": "Supporting immune balance, enhancing energy, reducing stress",
+        "Preparation Methods": "Steep in hot water with Reishi and honey",
+        "Cautions": "None specified"
+    },
+    "Oregon grape root": {
+        "Properties": "Liver-cleansing, blood-purifying",
+        "Uses": "Detoxification, reducing systemic inflammation",
+        "Preparation methods": "Commonly used in teas",
+        "Cautions": "May interact with certain medications"
+    },
+    "Devil\u2019s Claw": {
+        "Properties": "Anti-inflammatory, supports joint flexibility",
+        "Uses": "Reduces joint pain and inflammation",
+        "Preparation Methods": "Combined with alcohol for a tincture or mixed with Willow Bark powder for capsules",
+        "Cautions": "May interact with heart and blood pressure medications."
+    },
+    "St. John's Wort": {
+        "Properties": "Nervine, supports nervous system health",
+        "Uses": "Relief from nerve pain or sciatica",
+        "Preparation Methods": "Tinctures; can be taken internally",
+        "Cautions": "May interact with certain medications, including antidepressants"
+    },
+    "Echinacea and Goldenseal": {
+        "Properties": "Immune stimulating, natural antibiotic",
+        "Uses": "Supports immune function and fights infections",
+        "Preparation Methods": "Simmered roots reduced with honey into a tonic",
+        "Cautions": "Goldenseal should not be used long term or by those with high blood pressure, and it may interact with certain medications"
+    },
+    "Garlic and Thyme": {
+        "Properties": "Antimicrobial",
+        "Uses": "Fights bacterial and fungal infections, applied topically to cuts, scrapes, or fungal infections",
+        "Preparation Methods": "Oil infused with garlic and thyme, applied externally",
+        "Cautions": "Avoid applying to open wounds without professional guidance; may cause skin irritation in some individuals"
+    },
+    "Oregano Oil Capsules": {
+        "Properties": "Antibacterial, antifungal, antiviral, rich in carvacrol",
+        "Uses": "Fighting infections, boosting immunity",
+        "Preparation Methods": "Blend dried oregano leaves into a powder, mix with olive oil, fill empty vegetable capsules",
+        "Cautions": "Limit use to up to 2 weeks"
+    },
+    "Lemon Balm and Cat\u2019s Claw Antiviral Tea": {
+        "Properties": "Antiviral, immune-modulating, anti-inflammatory",
+        "Uses": "Supporting immune health, reducing viral infections, especially effective against herpes virus",
+        "Preparation Methods": "Steep lemon balm leaves and cat\u2019s claw bark in hot water, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Usnea and Calendula Wound Wash": {
+        "Properties": "Antimicrobial, promotes healing, reduces inflammation",
+        "Uses": "Preventing infections in minor wounds",
+        "Preparation Methods": "Simmer usnea and calendula in water, strain, and cool for use as a wash",
+        "Cautions": "For external use only, on minor wounds"
+    },
+    "Thyme and Rosemary Steam Inhalation": {
+        "Properties": "Antimicrobial, decongestant",
+        "Uses": "Clearing congestion, soothing irritated respiratory tissues during colds or respiratory infections",
+        "Preparation Methods": "Pour boiling water over thyme and rosemary, inhale steam under a towel",
+        "Cautions": "Be cautious of steam temperature to avoid burns"
+    },
+    "Licorice Root Antiviral Tea": {
+        "Properties": "Antiviral, soothes inflamed mucous membranes",
+        "Uses": "Soothing the throat, reducing viral load",
+        "Preparation Methods": "Steep licorice root in hot water, add honey if desired",
+        "Cautions": "People with hypertension should avoid due to glycyrrhizin content"
+    },
+    "Holy Basil and Ginger Immunity Tea": {
+        "Properties": "Adaptogenic, anti-inflammatory, supports immune system",
+        "Uses": "Reducing stress, enhancing immune function",
+        "Preparation Methods": "Steep holy basil and grated ginger in hot water, add honey if desired",
+        "Cautions": "None specified"
+    },
+    "Black Walnut": {
+        "Properties": "Antiparasitic",
+        "Uses": "Supports the elimination of intestinal parasites and cleanses the digestive system.",
+        "Preparation methods": "Used in capsule form, often combined with other herbs like Garlic.",
+        "Cautions": "May interact with certain medications and is not recommended for pregnant women."
+    },
+    "Lavender (Steam)": {
+        "Properties": "Calming, anti-inflammatory",
+        "Uses": "Reducing inflammation, easing sinus pressure",
+        "Preparation Methods": "Steam inhalation",
+        "Cautions": "Inhalation is generally safe; avoid contact with eyes"
+    },
+    "Aloe Vera": {
+        "Properties": "Nourishes the scalp and promotes hair regrowth.",
+        "Uses": "Used in a hair regrowth mask with fenugreek.",
+        "Preparation Methods": "Blended with soaked fenugreek seeds to form a paste.",
+        "Cautions": "Test for skin sensitivity before applying to the scalp."
+    },
+    "Cordyceps Mushroom": {
+        "Properties": "Enhances ATP production, supports lung function.",
+        "Uses": "Improves energy, endurance, and athletic performance.",
+        "Preparation methods": "Used in powders, capsules, or tinctures, often added to energizing elixirs.",
+        "Cautions": "May interact with immunosuppressant drugs. Safety in pregnant or breastfeeding women has not been established."
+    },
+    "Shiitake": {
+        "Properties": "Immune system modulation, inflammation reduction",
+        "Uses": "Boosts immune health",
+        "Preparation methods": "Saut\u00e9 with other mushrooms, Astragalus root, and Chaga powder in olive oil, add to vegetable broth with seasonings and simmer for 30 minutes",
+        "Cautions": "None specified"
+    },
+    "Maitake": {
+        "Properties": "Immune system modulation, inflammation reduction",
+        "Uses": "Part of immune-boosting soup",
+        "Preparation methods": "Cook with Shiitake, Reishi, Astragalus root, and Chaga powder in vegetable broth",
+        "Cautions": "None specified"
+    },
+    "Goji Berries": {
+        "Properties": "Enhance energy and stamina.",
+        "Uses": "Included in energy bars for sustained fuel and vitality.",
+        "Preparation Methods": "Combined with Maca, oats, and almonds to make nutritious bars.",
+        "Cautions": "Can interact with certain medications, including blood thinners and diabetes drugs."
+    },
+    "Elderberries": {
+        "Properties": "Immune-modulating, anti-inflammatory",
+        "Uses": "Supports immune health, reduces inflammation",
+        "Preparation Methods": "Part of immune-supporting elixir",
+        "Cautions": "None specified"
+    },
+    "Lemon Peel": {
+        "Properties": "Promotes digestion and vitality.",
+        "Uses": "Used in tea to enhance vitality and support digestion.",
+        "Preparation Methods": "Steep 1 tablespoon of dried peel with Schisandra in hot water for 15 minutes.",
+        "Cautions": "Ensure it is free from pesticides and thoroughly washed."
+    },
+    "Lemon peel": {
+        "Properties": "Stimulates digestion, reduces bloating",
+        "Uses": "Aiding digestion, reducing discomfort from bloating",
+        "Preparation methods": "Can be used in teas or as a zest in culinary dishes",
+        "Cautions": "Avoid consuming in excessive amounts due to potential for stomach upset in sensitive individuals"
+    },
+    "Acerola Cherry": {
+        "Properties": "Rich in Vitamin C, enhances immune function",
+        "Uses": "Supporting immune health, promoting skin integrity",
+        "Preparation methods": "Consumed fresh, as juice, or in supplement form",
+        "Cautions": "Excessive consumption can cause gastrointestinal discomfort"
+    },
+    "Alfalfa": {
+        "Properties": "Rich in minerals supporting bone formation.",
+        "Uses": "Brewed in a tea to enhance mineral density of bones.",
+        "Preparation Methods": "Steep 1 tablespoon dried Alfalfa in 2 cups hot water for 15 minutes.",
+        "Cautions": "May interact with blood thinners and hormone therapies."
+    },
+    "Chickweed": {
+        "Properties": "Known for its cooling and soothing properties, Chickweed supports skin health and offers anti-inflammatory benefits.",
+        "Uses": "Infused in vinegar for a nutrient-rich tonic, it can also be used in salads and topical applications for skin irritations.",
+        "Preparation methods": "Commonly infused in apple cider vinegar or used fresh in salads.",
+        "Cautions": "Pregnant women should avoid using Chickweed due to limited research on its effects."
+    },
+    "Sunflower Seeds": {
+        "Properties": "High in Vitamin E",
+        "Uses": "Maintaining immune cell health, protecting cells from oxidative damage",
+        "Preparation methods": "Consumed raw or roasted, can be added to various dishes",
+        "Cautions": "High calorie count; consume in moderation"
+    },
+    "Pumpkin Seeds": {
+        "Properties": "Great source of zinc, magnesium, and healthy fats. Supports overall immune function.",
+        "Uses": "Eaten for their nutritional value and to support immune health.",
+        "Preparation Methods": "Can be eaten raw, roasted, or incorporated into herbal powders and trail mixes.",
+        "Cautions": "Generally considered safe but may cause digestive upset in some individuals if consumed in large quantities."
+    },
+    "Mint": {
+        "Properties": "Cooling, refreshing, soothing",
+        "Uses": "Balances skin, refreshes, and has a cooling effect",
+        "Preparation methods": "Steep in hot water, strain, and use as a facial toner",
+        "Cautions": "Avoid if you have an allergy to menthol"
+    },
+    "Dandelion leaf": {
+        "Properties": "Hydrating, supports detoxification",
+        "Uses": "Supports immune function, hydration",
+        "Preparation methods": "Can be used in teas, salads, or as a supplement",
+        "Cautions": "May interact with diuretic medications"
+    },
+    "Burdock root": {
+        "Properties": "Supports detoxification",
+        "Uses": "Promotes a healthier immune response",
+        "Preparation methods": "Can be used in teas, culinary dishes, or as a supplement",
+        "Cautions": "None specified"
+    },
+    "Rose": {
+        "Properties": "Anti-inflammatory, hydrating, soothing",
+        "Uses": "Reduces dark circles, hydrates skin, tightens skin around the eyes",
+        "Preparation methods": "Mix Rose water with Aloe Vera gel and Rosehip Seed Oil",
+        "Cautions": "May cause irritation in sensitive skin"
+    },
+    "Sandalwood": {
+        "Properties": "Calming, promotes relaxation",
+        "Uses": "Supports mental and emotional well-being",
+        "Preparation methods": "Used in aromatherapy",
+        "Cautions": "May cause skin irritation in some individuals when applied topically"
+    },
+    "Psyllium Husk": {
+        "Properties": "Expands in the stomach, promoting a feeling of fullness.",
+        "Uses": "Used to reduce the likelihood of overeating by promoting a feeling of fullness.",
+        "Preparation methods": "Mix 1 teaspoon of Psyllium Husk in 1 cup of water, stir well and drink immediately, followed by an additional glass of water.",
+        "Cautions": "None mentioned, but it's generally advised to consume with plenty of water to avoid gastrointestinal blockage."
+    },
+    "Anise Seed": {
+        "Properties": "Carminative, soothes the digestive tract.",
+        "Uses": "Carminative tea, reduces gas and bloating.",
+        "Preparation methods": "Steep Anise seeds in hot water for 15 minutes.",
+        "Cautions": "May cause allergic reactions in sensitive individuals."
+    },
+    "Peppermint Oil": {
+        "Properties": "Relaxes smooth muscles of the digestive tract",
+        "Uses": "Alleviates cramping and spasms, especially related to IBS",
+        "Preparation Methods": "Encapsulated in gel capsules",
+        "Cautions": "None specified"
+    },
+    "Gentian Root": {
+        "Properties": "Stimulates digestive secretions, enhances digestion",
+        "Uses": "Taken before meals to aid digestion",
+        "Preparation Methods": "Powder form, mixed with Yellow Dock Root powder for capsules",
+        "Cautions": "Should not be used by individuals with ulcers or high stomach acid"
+    },
+    "Cardamom": {
+        "Properties": "Stimulates digestion",
+        "Uses": "Enhancing digestive fire, relieving symptoms of indigestion",
+        "Preparation Methods": "Crushed pods steeped with Ginger and Cinnamon",
+        "Cautions": "None specified"
+    },
+    "Caraway": {
+        "Properties": "Carminative, aids in digestion, reduces gas.",
+        "Uses": "Used in fermentations and culinary dishes to support digestive health.",
+        "Preparation Methods": "Seeds are used in cooking, baking, and to flavor ferments.",
+        "Cautions": "None specified, but moderation is advised."
+    },
+    "Coriander": {
+        "Properties": "Aids digestion, reduces gas and bloating.",
+        "Uses": "Helpful for digestive ease and comfort.",
+        "Preparation Methods": "Seeds steeped in hot water, often combined with Caraway.",
+        "Cautions": "Generally safe, but use in moderation."
+    },
+    "Plantain Leaf": {
+        "Properties": "Rich in mucilage, soothes and protects mucous membranes, and promotes tissue repair.",
+        "Uses": "Used in conjunction with Marshmallow Root for soothing the digestive tract.",
+        "Preparation Methods": "Simmer in water with Marshmallow Root for 20 minutes, strain, add honey, and store in a glass jar.",
+        "Cautions": "None mentioned."
+    },
+    "Anise": {
+        "Properties": "Reduces gas and bloating.",
+        "Uses": "Effective for relieving nausea and calming the digestive system.",
+        "Preparation Methods": "Steep in hot water with Ginger and Peppermint for 15 minutes, then strain and serve warm.",
+        "Cautions": "None mentioned."
+    },
+    "Hops": {
+        "Properties": "Sedative, supports restful sleep.",
+        "Uses": "Used in combination with other herbs to promote sleep and relaxation.",
+        "Preparation methods": "Often included in sleep-promoting tea blends or taken as a tincture.",
+        "Cautions": "Can cause drowsiness; use caution when combining with other sedatives."
+    },
+    "Psyllium": {
+        "Properties": "Adds bulk to stool, promotes smooth bowel movements.",
+        "Uses": "Used in a daily gut cleanse drink to promote regularity and support gut health.",
+        "Preparation methods": "Mixed with Aloe Vera gel and warm water to create a drink.",
+        "Cautions": "May cause bloating or gas in some individuals; adequate water intake is necessary."
+    },
+    "Gentian": {
+        "Properties": "Stimulates the production of digestive enzymes.",
+        "Uses": "Enhances digestion and bile flow.",
+        "Preparation methods": "Mixed with yellow dock powder and filled into empty gel capsules.",
+        "Cautions": "None specified."
+    },
+    "Artichoke": {
+        "Properties": "Supports bile production, promotes detoxification",
+        "Uses": "Enhancing digestion, supporting liver detoxification",
+        "Preparation Methods": {
+            "Liver Cleanse Elixir": "Simmer with burdock root in water for 30 minutes"
+        },
+        "Cautions": "May interact with diuretics and bile duct obstruction medications"
+    },
+    "Senna": {
+        "Properties": "Stimulant laxative",
+        "Uses": "Promotes bowel movements",
+        "Preparation methods": "Steep 1 teaspoon dried Senna leaves in 2 cups hot water for 10 minutes",
+        "Cautions": "Use sparingly to prevent dependency"
+    },
+    "Cascara Sagrada": {
+        "Properties": "Stimulant laxative, increases muscle contractions in the intestines.",
+        "Uses": "Used for short-term constipation relief, induces bowel movements.",
+        "Preparation Methods": "Consumed as a dried bark extract, in capsules, or as a tea.",
+        "Cautions": "Not for long-term use; overuse can lead to dependency and decreased bowel function."
+    },
+    "Blackberry Leaf": {
+        "Properties": "Astringent",
+        "Uses": "Firms up stools",
+        "Preparation methods": "Steep 1 tablespoon dried Blackberry Leaf in 2 cups hot water for 15 minutes",
+        "Cautions": "None specified"
+    },
+    "Agrimony": {
+        "Properties": "Astringent, tones the digestive tract",
+        "Uses": "Managing diarrhea, promoting overall gut health",
+        "Preparation methods": "Dried herb steeped in hot water for tea",
+        "Cautions": "None specified"
+    },
+    "Raspberry Leaf": {
+        "Properties": "Astringent, tones the digestive tract",
+        "Uses": "Firms up stools, reduces diarrhea",
+        "Preparation methods": "Dried leaf steeped in tea",
+        "Cautions": "Generally considered safe, but consult a healthcare provider if pregnant"
+    },
+    "Oat Bran": {
+        "Properties": "Insoluble fiber, supports digestive health",
+        "Uses": "Balancing fiber intake, promoting bowel regularity",
+        "Preparation methods": "Mixed with psyllium husk in a daily fiber drink",
+        "Cautions": "None specified"
+    },
+    "Chicory Root": {
+        "Properties": "Stimulates bile production, supports liver detoxification.",
+        "Uses": "Supports liver function and promotes digestion.",
+        "Preparation Methods": "Dried form, used in tea.",
+        "Cautions": "May cause an allergic reaction in some individuals sensitive to ragweed and related plants."
+    },
+    "Fermented Ginger": {
+        "Properties": "Probiotic, supports digestive health",
+        "Uses": "Reduces nausea, replenishes gut flora, improves digestion",
+        "Preparation methods": "Fermentation process transforms it into a probiotic food",
+        "Cautions": "Generally safe, but excessive consumption may lead to gastrointestinal discomfort"
+    },
+    "Fermented Garlic": {
+        "Properties": "Probiotic, antimicrobial",
+        "Uses": "Targets harmful bacteria, promotes growth of beneficial strains, balances microbiome",
+        "Preparation methods": "Achieved through fermentation, consumed in food or as a supplement",
+        "Cautions": "May cause bad breath or body odor; individuals with garlic sensitivity should avoid"
+    },
+    "Triphala": {
+        "Properties": "Promotes bowel regularity, supports weight management",
+        "Uses": "Supports digestion and detoxification",
+        "Preparation methods": "Powder form used in capsules",
+        "Cautions": "None specified"
+    },
+    "Black Walnut and Wormwood": {
+        "Properties": "Antiparasitic, supports elimination of intestinal parasites",
+        "Uses": "Cleansing the digestive system, eliminating parasites",
+        "Preparation methods": "Capsules filled with a mixture of Black Walnut Hull and Wormwood powders",
+        "Cautions": "May interact with certain medications or conditions; consult a healthcare provider before use"
+    },
+    "Licorice Root and Marshmallow": {
+        "Properties": "Demulcent, coats and protects gut lining, reduces inflammation",
+        "Uses": "Managing acid reflux, protecting the digestive tract",
+        "Preparation methods": "Powder mixed and taken in warm water before meals",
+        "Cautions": "Licorice root may cause issues with blood pressure or interact with medications when used in large amounts or for extended periods"
+    },
+    "Chamomile, Lavender, and Lemon Balm": {
+        "Properties": "Calms the nervous system, reduces anxiety",
+        "Uses": "Promoting relaxation, managing stress-induced digestive symptoms",
+        "Preparation methods": "Tea steeped with dried flowers and leaves of Chamomile, Lavender, and Lemon Balm",
+        "Cautions": "May cause drowsiness; avoid driving or operating heavy machinery after consumption"
+    },
+    "Dandelion Root and Artichoke Leaf": {
+        "Properties": "Bitter herbs that stimulate bile production and digestive enzyme release",
+        "Uses": "Enhancing digestion, preventing indigestion and bloating",
+        "Preparation methods": "Capsules filled with a mixture of Dandelion Root and Artichoke Leaf powders",
+        "Cautions": "Consult a healthcare provider before use if you have gallbladder disease or a bile duct obstruction"
+    },
+    "Slippery Elm and Plantain": {
+        "Properties": "Provides mucilage that protects mucous membranes of the digestive tract",
+        "Uses": "Managing inflammatory bowel conditions, promoting gut healing",
+        "Preparation methods": "Powder mixed and taken in warm water before meals",
+        "Cautions": "Slippery Elm may interfere with the absorption of certain medications"
+    },
+    "Peppermint and Ginger": {
+        "Properties": "Anti-nausea, calms the digestive tract, reduces inflammation",
+        "Uses": "Relieving nausea, promoting digestion",
+        "Preparation methods": "Capsules filled with a mixture of Peppermint and Ginger powders",
+        "Cautions": "Peppermint may cause heartburn in some individuals; avoid if you have GERD"
+    },
+    "Valerian and Skullcap": {
+        "Properties": "Calming nervine herbs that reduce anxiety and promote restful sleep",
+        "Uses": "Reducing anxiety, promoting sleep",
+        "Preparation methods": "Capsules filled with a mixture of Valerian Root and Skullcap powders",
+        "Cautions": "May cause drowsiness; avoid driving or operating heavy machinery. Consult a healthcare provider before use if pregnant, nursing, or on medication"
+    },
+    "Meadowsweet": {
+        "Properties": "Soothes inflammation, promotes joint health",
+        "Uses": "Used in tea for pain relief",
+        "Preparation Methods": "Steeped in hot water for tea",
+        "Cautions": "Should be avoided by individuals with aspirin allergies"
+    },
+    "Beet": {
+        "Properties": "High in betaine, supports liver health",
+        "Uses": "Promotes liver detoxification and healthy liver function",
+        "Preparation Methods": {
+            "Smoothie": "Blend with dandelion greens, berries, ginger, and coconut water"
+        },
+        "Cautions": "High consumption can temporarily change urine color"
+    },
+    "Schisandra Berries": {
+        "Properties": "Adaptogenic, supports liver function.",
+        "Uses": "Enhances resilience, protects liver from damage.",
+        "Preparation Methods": "Dried form, used in tincture.",
+        "Cautions": "None specified."
+    },
+    "Thistle": {
+        "Properties": "Hepatoprotective, supports liver regeneration and detoxification",
+        "Uses": "Part of a tincture for promoting liver health",
+        "Preparation methods": "Used in tincture form",
+        "Cautions": "Specific cautions not mentioned, but general caution advised when using potent herbs"
+    },
+    "Dill": {
+        "Properties": "Carminative, helps reduce gas, bloating, and digestive discomfort.",
+        "Uses": "Added to vegetable ferments to improve digestive health.",
+        "Preparation Methods": "Can be used fresh or dried in culinary preparations and fermentations.",
+        "Cautions": "None specified, but individuals with allergies to plants in the Apiaceae family should proceed with caution."
+    },
+    "Hoodia Gordonii": {
+        "Properties": "Appetite suppressant, contains compound P57 which affects the hypothalamus.",
+        "Uses": "Traditionally used to suppress hunger during long hunting trips.",
+        "Preparation Methods": "Consumed as supplements.",
+        "Cautions": "Safety and efficacy for long-term use are not well documented. Not recommended for pregnant or breastfeeding women."
+    },
+    "Garcinia Cambogia": {
+        "Properties": "Inhibits fat production",
+        "Uses": "Enhances metabolism, reduces fat storage",
+        "Preparation methods": "Powder form used in capsules",
+        "Cautions": "May interact with medications, including those for diabetes"
+    },
+    "Fennel Seed": {
+        "Properties": "Rich in dietary fiber, mild diuretic effect.",
+        "Uses": "Reduces appetite, bloating, and promotes a feeling of fullness. Consuming before meals can help curb appetite and reduce overeating.",
+        "Preparation methods": "Can be consumed as tea.",
+        "Cautions": "Not specified in the provided text."
+    },
+    "Gymnema Sylvestre": {
+        "Properties": "Reduces sweetness detection, supports blood sugar regulation",
+        "Uses": "Beneficial for those with sugar cravings or difficulty maintaining a healthy diet.",
+        "Preparation methods": "Dried leaves can be steeped in tea for appetite suppression.",
+        "Cautions": "Not specified in the text."
+    },
+    "Green Tea Extract": {
+        "Properties": "Contains catechins and caffeine, increases thermogenesis and fat oxidation.",
+        "Uses": "Effective for appetite control and weight loss. Reduces appetite and increases metabolism when consumed before meals.",
+        "Preparation methods": "Can be consumed as tea or in other forms before meals.",
+        "Cautions": "Contains caffeine, which may not be suitable for everyone."
+    },
+    "Caralluma Fimbriata": {
+        "Properties": "Influences hunger-regulating hormones, including reducing ghrelin levels.",
+        "Uses": "Suppresses appetite and increases endurance.",
+        "Preparation methods": "Not specified in the provided text.",
+        "Cautions": "Not specified in the provided text."
+    },
+    "Slippery Elm and Marshmallow Root": {
+        "Properties": "Mucilaginous herbs that create a soothing, gelatinous texture when combined with water.",
+        "Uses": "Coat the stomach and promote a feeling of satiety, reducing hunger and managing appetite.",
+        "Preparation methods": "Not specified in the provided text.",
+        "Cautions": "Not specified in the provided text."
+    },
+    "Bitter Melon": {
+        "Properties": "Helps regulate blood sugar levels.",
+        "Uses": "Reduces hunger spikes and prevents cravings for sugary foods by balancing blood sugar levels.",
+        "Preparation methods": "Commonly used in Asian cuisine, preparation methods for appetite control not specified.",
+        "Cautions": "Not specified in the provided text."
+    },
+    "Gymnema": {
+        "Properties": "Appetite suppressant",
+        "Uses": "Reduces desire for sugary foods, controls appetite",
+        "Preparation methods": "Included in the Cinnamon and Gymnema Appetite-Suppressing Tea preparation.",
+        "Cautions": "May lower blood sugar levels too much in combination with diabetes medications"
+    },
+    "Hoodia": {
+        "Properties": "Reduces hunger and promotes fullness.",
+        "Uses": "Used in capsule form to help reduce hunger before meals.",
+        "Preparation methods": "Mix Hoodia powder with Fenugreek powder, fill empty gel capsules, and take 1 capsule up to twice daily before meals.",
+        "Cautions": "None mentioned, but its safety and efficacy for long-term use have not been well studied."
+    },
+    "Stinging Nettle": {
+        "Properties": "Natural antihistamine that blocks histamine receptors, high mineral content.",
+        "Uses": "Alleviates symptoms of allergic reactions such as itching, hives, and nasal congestion.",
+        "Preparation methods": "Can be taken as a tea, tincture, or capsule.",
+        "Cautions": "None mentioned."
+    },
+    "Marshmallow": {
+        "Properties": "Soothes inflammation, reduces pain",
+        "Uses": "Supports joint health and reduces pain",
+        "Preparation Methods": "Steeped in hot water for teas",
+        "Cautions": "Limited, but may interfere with the absorption of other medications"
+    },
+    "Quercetin and Bromelain": {
+        "Properties": "Quercetin stabilizes mast cells to prevent histamine release, and Bromelain reduces inflammation.",
+        "Uses": "Effective for managing seasonal and food-related allergies by reducing allergy symptoms.",
+        "Preparation methods": "Combine with alcohol in a glass jar, let steep for 4-6 weeks, strain, and store in a dark glass bottle.",
+        "Cautions": "Alcohol-based tinctures may not be suitable for everyone; consult a healthcare provider if unsure."
+    },
+    "Lemon Balm and Skullcap": {
+        "Properties": "Calm the nervous system and reduce stress.",
+        "Uses": "Ideal for managing anxiety-related allergy flare-ups and promoting relaxation.",
+        "Preparation methods": "Steep in hot water for 15 minutes, strain, and serve warm.",
+        "Cautions": "May cause drowsiness; avoid operating heavy machinery after consumption."
+    },
+    "Licorice Root and Calendula": {
+        "Properties": "Reduce inflammation and promote healing.",
+        "Uses": "Soothing allergy-related skin conditions by reducing redness and calming irritated skin.",
+        "Preparation methods": "Infuse in olive oil over low heat, strain, mix with shea butter, and let cool.",
+        "Cautions": "Licorice root may increase blood pressure if taken in large quantities."
+    },
+    "Butterbur and Nettle": {
+        "Properties": "Natural antihistamines that reduce inflammation and clear sinus congestion.",
+        "Uses": "Effective for managing allergy-related respiratory symptoms.",
+        "Preparation methods": "Mix powders, fill empty capsules, and seal.",
+        "Cautions": "Butterbur may cause liver damage if not properly processed; ensure sourcing from a reputable supplier."
+    },
+    "Reishi and Holy Basil": {
+        "Properties": "Adaptogenic herbs that balance the body\u2019s stress response, reduce inflammation, and support immune health.",
+        "Uses": "Ideal for managing stress-induced allergy symptoms.",
+        "Preparation methods": "Steep in hot water for 15 minutes, strain, and serve warm.",
+        "Cautions": "Reishi may interact with certain medications; consult a healthcare provider if on medication."
+    },
+    "Turmeric and Licorice": {
+        "Properties": "Potent anti-inflammatory properties that support liver health and promote immune balance.",
+        "Uses": "Ideal for managing allergy-related inflammation.",
+        "Preparation methods": "Mix powders, fill empty capsules, and seal.",
+        "Cautions": "Turmeric may thin the blood; avoid taking with blood thinners."
+    },
+    "Dandelion and Burdock": {
+        "Properties": "Cleanse the liver, support bile production, and promote detoxification.",
+        "Uses": "Enhancing liver health and overall wellness.",
+        "Preparation methods": "Mix powders, fill empty capsules, and seal.",
+        "Cautions": "May interact with diuretics or diabetes medication."
+    },
+    "Chamomile and Ginger": {
+        "Properties": "Chamomile calms, while Ginger aids digestion.",
+        "Uses": "Provides digestive comfort and relief from upset stomach.",
+        "Preparation methods": "Steep dried flowers and root in hot water, strain, and serve.",
+        "Cautions": "Chamomile may cause allergic reactions in individuals sensitive to the daisy family."
+    },
+    "Oatmeal": {
+        "Properties": "Gently exfoliates dead skin cells",
+        "Uses": "Exfoliating scrub",
+        "Preparation methods": "Ground and mixed with honey and Chamomile",
+        "Cautions": "None specified"
+    },
+    "Rhodiola Rosea": {
+        "Properties": "Balances cortisol levels, supports adrenal function.",
+        "Uses": "Improves endurance, reduces feelings of exhaustion.",
+        "Preparation methods": "Taken as capsules, teas, or tinctures to combat fatigue and enhance mental clarity.",
+        "Cautions": "May cause dizziness or dry mouth in some individuals."
+    },
+    "Bergamot": {
+        "Properties": "Calming, reduces anxiety, used in aromatherapy",
+        "Uses": "Promotes a peaceful atmosphere and reduces anxiety when used in a diffuser or applied topically.",
+        "Preparation Methods": "Essential oil used in diffusers or diluted in a carrier oil for topical application.",
+        "Cautions": "Topical use should be sun-safe; Bergamot can be photosensitizing."
+    },
+    "Tulsi (Holy Basil)": {
+        "Properties": "Enhances the body\u2019s stress response, reduces fatigue, supports adrenal health.",
+        "Uses": "Reducing stress-induced exhaustion, supporting adrenal health.",
+        "Preparation Methods": {
+            "Adrenal Support Capsules": "Mix powder with rhodiola powder, fill capsules."
+        },
+        "Cautions": "May lower blood sugar levels, caution advised for those with diabetes."
+    },
+    "Saffron": {
+        "Properties": "Improves visual acuity, reduces eye strain, supports retinal health.",
+        "Uses": "Used in a vision-enhancing tea with Chamomile.",
+        "Preparation methods": "Steeped in hot water with Chamomile.",
+        "Cautions": "High doses can be toxic; use in moderation."
+    },
+    "Herbal Blends": {
+        "Calm Mind Tea": {
+            "Composition": "Lemon Balm, Chamomile, Skullcap",
+            "Uses": "Reduces anxiety, promotes relaxation, supports emotional stability.",
+            "Preparation": "Enjoyed throughout the day or before bedtime."
+        },
+        "Mood-Lifting Elixir": {
+            "Composition": "St. John\u2019s Wort, Rhodiola, Saffron",
+            "Uses": "Mood-enhancing, supports neurotransmitter balance, reduces symptoms of depression.",
+            "Preparation": "Combination method not specified."
+        }
+    },
+    "Bacopa Monnieri": {
+        "Properties": "Supports memory retention and cognitive processing.",
+        "Uses": "Drunk as a tea to promote mental clarity and enhance learning.",
+        "Preparation Methods": "Steeped in hot water for tea.",
+        "Cautions": "May interact with certain medications and cause gastrointestinal upset."
+    },
+    "Lion\u2019s Mane Mushroom": {
+        "Properties": "Stimulates nerve growth factor (NGF) supporting neuron health and regeneration.",
+        "Uses": "Gaining popularity for its potential to maintain cognitive health and memory.",
+        "Preparation methods": "Specific methods not mentioned, but available in various forms including powders and supplements.",
+        "Cautions": "Generally considered safe, but potential interactions with medications or conditions should be reviewed."
+    },
+    "Lion\u2019s Mane": {
+        "Properties": "Supports cognitive function, reduces fatigue",
+        "Uses": "Used in cognitive-boosting capsules for mental clarity",
+        "Preparation methods": "Dried powder filled into capsules",
+        "Cautions": "May cause mild digestive issues in some individuals"
+    },
+    "Brahmi": {
+        "Properties": "Prevents hair loss, improves scalp health",
+        "Uses": "Used in hair nourishing oils to strengthen hair",
+        "Preparation Methods": "Simmer brahmi powder in sesame oil, strain and store",
+        "Cautions": "None specified"
+    },
+    "Rhodiola Root": {
+        "Properties": "Reduces mental fatigue and sharpens focus.",
+        "Uses": "Effective for sustaining cognitive performance.",
+        "Preparation Methods": "Powder form, mixed and filled into empty gel capsules.",
+        "Cautions": "May cause dry mouth or dizziness in some individuals."
+    },
+    "Lemon Essential Oil": {
+        "Properties": "Promotes sharp focus and mental clarity.",
+        "Uses": "Used in combination with Sage for enhancing mental clarity.",
+        "Preparation Methods": "Combined with Sage essential oil in a spray.",
+        "Cautions": "Should be diluted before use on skin; avoid direct sunlight on areas where applied."
+    },
+    "Ginkgo": {
+        "Properties": "Enhances blood flow to the eyes, improves memory and focus",
+        "Uses": "Supports cognitive function and reduces visual fatigue",
+        "Preparation methods": "Steeped in hot water with Gotu Kola",
+        "Cautions": "None mentioned"
+    },
+    "California Poppy": {
+        "Properties": "Reduces pain and promotes relaxation",
+        "Uses": "Reduces pain-related insomnia and promotes restful sleep",
+        "Preparation methods": "Sleep Support Tincture with Valerian",
+        "Cautions": "None specified"
+    },
+    "Poppy": {
+        "Properties": "Useful for reducing sleep latency and encouraging peaceful sleep.",
+        "Uses": "Promotes relaxation and aids in transitioning into sleep.",
+        "Preparation methods": "Tinctures can be taken about 30 minutes before bedtime.",
+        "Cautions": "Specific cautions were not mentioned, but as with all herbs, it should be used responsibly and with awareness of potential interactions with other medications or conditions."
+    },
+    "Lion's Mane Mushroom": {
+        "Properties": "Nootropic, neuroprotective, supports production of nerve growth factor.",
+        "Uses": "Enhances cognitive function, supports memory and focus, promotes brain health.",
+        "Preparation Methods": "Can be taken in capsules, powders, or as a tea.",
+        "Cautions": "Generally well tolerated, but potential interactions with medications have not been thoroughly studied."
+    },
+    "Lion's Mane": {
+        "Properties": "Promotes nerve regeneration and cognitive health.",
+        "Uses": "Enhances cognitive function and supports brain health.",
+        "Preparation methods": "Commonly consumed in powder form, filled in capsules.",
+        "Cautions": "Well-tolerated, but may cause gastrointestinal discomfort in some cases."
+    },
+    "Dong Quai": {
+        "Properties": "Balances hormonal levels",
+        "Uses": "Effective for women experiencing mood swings due to hormonal fluctuations",
+        "Preparation methods": "Commonly used in tinctures or capsules",
+        "Cautions": "None specified"
+    },
+    "Willow Bark": {
+        "Properties": "Natural pain relief",
+        "Uses": "Manages chronic pain and reduces inflammation",
+        "Preparation methods": "Powdered for capsules or used in tinctures",
+        "Cautions": "Should not be used by individuals allergic to aspirin or those under 18 due to the risk of Reye's syndrome"
+    },
+    "Devil's Claw": {
+        "Properties": "Reduces inflammation and pain",
+        "Uses": "Osteoarthritis, chronic pain conditions",
+        "Preparation Methods": "Often paired with other anti-inflammatory herbs in tinctures or capsules",
+        "Cautions": "Consult a healthcare provider if taking other medications"
+    },
+    "Arnica": {
+        "Properties": "Reduces inflammation, soothes aches and pains.",
+        "Uses": "Incorporated in a Bone-Healing Balm and Joint-Soothing Cream for pain relief.",
+        "Preparation Methods": "Infused in coconut oil or shea butter, mixed with beeswax.",
+        "Cautions": "For external use only; can cause irritation or allergic reactions in some individuals."
+    },
+    "White Willow Bark": {
+        "Properties": "Soothes pain, promotes healing.",
+        "Uses": "Used in a Joint-Soothing Cream for pain relief.",
+        "Preparation Methods": "Infused in shea butter, mixed with beeswax.",
+        "Cautions": "Contains salicin; should be avoided by those allergic to aspirin."
+    },
+    "Horsetail": {
+        "Properties": "High in calcium, silica, and essential minerals for bone strength.",
+        "Uses": "Used in Calcium-Boosting Capsules and Bone Health Capsules to enhance bone density and mineral content.",
+        "Preparation Methods": "Dried powder filled into gel capsules.",
+        "Cautions": "Can be diuretic; long-term use can deplete potassium levels."
+    },
+    "Motherwort": {
+        "Properties": "Stabilizes heart rhythm",
+        "Uses": "Reduces heart palpitations, promotes relaxation",
+        "Preparation methods": "Dried herb steeped in hot water with linden blossom",
+        "Cautions": "Not recommended for pregnant women due to its uterine stimulating effects"
+    },
+    "Linden Blossom": {
+        "Properties": "Stress reducing, blood pressure lowering",
+        "Uses": "Calms the heart, reduces stress, and lowers blood pressure.",
+        "Preparation Methods": "Steeped in hot water for teas.",
+        "Cautions": "Excessive use may cause heart damage."
+    },
+    "Hawthorn Berry": {
+        "Properties": "Strengthens the heart muscle, improves circulation, supports heart function",
+        "Uses": "Regulates blood pressure, supports arterial health",
+        "Preparation methods": "Crushed and steeped in hot water or alcohol with other herbs for teas and tinctures",
+        "Cautions": "May interact with heart medications; consult a healthcare provider before use if you have a heart condition"
+    },
+    "Ginseng (Panax Ginseng)": {
+        "Properties": "Enhances body's resistance to stress, improves oxygen utilization.",
+        "Uses": "Combats fatigue, increases physical performance and vitality.",
+        "Preparation methods": "Consumed as tea, tinctures, or capsules for energy boosting.",
+        "Cautions": "May cause insomnia, high blood pressure. Not recommended for pregnant or breastfeeding women."
+    },
+    "Eleuthero (Siberian Ginseng)": {
+        "Properties": "Improves body's response to stress, enhances physical endurance.",
+        "Uses": "Increases stamina, reduces fatigue, improves mental performance.",
+        "Preparation methods": "Consumed as tea, tinctures, or capsules for sustained energy.",
+        "Cautions": "May interact with medications for diabetes and blood pressure. Consult a healthcare provider before use."
+    },
+    "Matcha": {
+        "Properties": "Increases energy, enhances focus.",
+        "Uses": "Boosts energy and mental focus, reduces fatigue.",
+        "Preparation methods": "Powder blended in smoothies.",
+        "Cautions": "Contains caffeine, which may cause nervousness or sleep issues in sensitive individuals."
+    },
+    "Frankincense": {
+        "Properties": "Reduces wrinkles, improves elasticity",
+        "Uses": "Anti-aging cream",
+        "Preparation methods": "Blended with Gotu Kola oil, shea butter, and coconut oil",
+        "Cautions": "None specified"
+    },
+    "Rose Petal": {
+        "Properties": "Soothes irritated skin, promotes glowing complexion",
+        "Uses": "Hydrating gel",
+        "Preparation methods": "Blended with Aloe Vera gel and jojoba oil",
+        "Cautions": "None specified"
+    },
+    "Pomegranate": {
+        "Properties": "Antioxidant, anti-aging, moisturizing",
+        "Uses": "Improves skin elasticity, reduces fine lines",
+        "Preparation methods": "Mix Pomegranate Seed Oil with Rosehip Seed Oil and essential oil",
+        "Cautions": "Generally safe, but test for allergies"
+    },
+    "Witch Hazel": {
+        "Properties": "Reduces acne, tightens pores",
+        "Uses": "Applied to acne-prone skin to reduce breakouts",
+        "Preparation Methods": "Mixed with Peppermint infusion to create a blemish-fighting toner",
+        "Cautions": "None specified"
+    },
+    "Bilberry": {
+        "Properties": "Improves night vision, supports healthy blood flow",
+        "Uses": "Tea for supporting night vision and reducing eye fatigue",
+        "Preparation Methods": "Steeped in hot water",
+        "Cautions": "None specified"
+    },
+    "Blueberry": {
+        "Properties": "Rich in antioxidants and vitamins",
+        "Uses": "Smoothie ingredient for eye health",
+        "Preparation Methods": "Blended",
+        "Cautions": "None specified"
+    },
+    "Blueberries": {
+        "Properties": "High in antioxidants",
+        "Uses": "Supports eye health and protects against oxidative damage",
+        "Preparation methods": "Steep in hot water for 15 minutes, strain and serve warm",
+        "Cautions": "None mentioned"
+    },
+    "Carrot": {
+        "Properties": "Rich in beta-carotene and Vitamin A",
+        "Uses": "Improves night vision and supports overall eye health",
+        "Preparation methods": "Juiced with ginger and apple",
+        "Cautions": "None mentioned"
+    },
+    "Saw Palmetto": {
+        "Properties": "Helps maintain hair density and prevent hair loss by blocking DHT.",
+        "Uses": "Used in supplements and scalp massages to support hair health.",
+        "Preparation Methods": "Can be mixed with peppermint essential oil and jojoba oil for a scalp massage oil.",
+        "Cautions": "Consult a healthcare provider before use, especially if taking medication for hormonal conditions."
+    },
+    "Bhringraj": {
+        "Properties": "Known for enhancing hair thickness and reducing hair fall.",
+        "Uses": "Combined with brahmi in a scalp oil for hair health.",
+        "Preparation Methods": "Simmered with brahmi powder and coconut oil for a scalp treatment.",
+        "Cautions": "Consult a healthcare provider if you have a pre-existing medical condition."
+    },
+    "Amla": {
+        "Properties": "Strengthens hair roots, promotes hair density",
+        "Uses": "Used in hair thickening masks",
+        "Preparation Methods": "Blend amla powder with fenugreek seeds and coconut milk into a paste",
+        "Cautions": "None specified"
+    },
+    "Castor Oil": {
+        "Properties": "Stimulates hair follicles, promotes new hair growth",
+        "Uses": "Used in combination with ginger for hair regrowth serums",
+        "Preparation Methods": "Mix with ginger juice",
+        "Cautions": "None specified"
+    },
+    "Cedarwood": {
+        "Properties": "Strengthens hair roots",
+        "Uses": "Used in scalp stimulating oils to promote hair growth",
+        "Preparation Methods": "Mix cedarwood essential oil with almond oil",
+        "Cautions": "None specified"
+    },
+    "Black Cohosh": {
+        "Properties": "Contains phytoestrogens that support bone density.",
+        "Uses": "Formulated into Bone Support Capsules to prevent osteoporosis, especially in postmenopausal women.",
+        "Preparation Methods": "Dried powder filled into gel capsules.",
+        "Cautions": "May affect hormone-sensitive conditions; consult a healthcare provider if you have concerns."
+    }
+}
