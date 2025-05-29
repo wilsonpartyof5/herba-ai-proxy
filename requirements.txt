@@ -4,5 +4,5 @@ tqdm>=4.65.0
 fastapi
 uvicorn
 pydantic
-pinecone-client
+pinecone
 python-multipart 
