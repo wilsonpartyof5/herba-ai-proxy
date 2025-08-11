@@ -134,4 +134,4 @@ Respond with ONLY "true" if the response contains a herbal remedy recommendation
         }
         
     except Exception as e:
-        return {"error": f"Analysis failed: {str(e)}"}
+        return {"error": f"Analysis failed: {str(e)}"}# Force redeploy
