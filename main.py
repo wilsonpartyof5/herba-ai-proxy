@@ -91,3 +91,47 @@ async def get_herbalist_response(req: QueryRequest):
     except Exception as e:
         return {"error": "AI response was not valid JSON", "details": str(e)}
     return ai_json
+
+@app.post("/analyzeResponseForRemedy")
+async def analyze_response_for_remedy(req: dict):
+    """AI-powered analysis to detect if a response contains a herbal remedy recommendation"""
+    try:
+        response_text = req.get("response", "")
+        if not response_text:
+            return {"error": "Response text is required"}
+        
+        # AI prompt for remedy detection
+        ai_prompt = f"""
+Analyze this AI response and determine if it contains a herbal remedy recommendation.
+
+Response to analyze:
+{response_text}
+
+Instructions:
+- Look for herbal remedy suggestions, recommendations, or treatments
+- Check for herb names, usage instructions, or remedy descriptions
+- Consider context about natural solutions or herbal treatments
+
+Respond with ONLY "true" if the response contains a herbal remedy recommendation, or "false" if it does not.
+"""
+        
+        # Use OpenAI to analyze the response
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[{"role": "system", "content": ai_prompt}],
+            max_tokens=10,
+            temperature=0.1,  # Low temperature for consistent analysis
+        )
+        
+        # Extract the result
+        result = response.choices[0].message['content'].strip().lower()
+        contains_remedy = result == "true"
+        
+        return {
+            "contains_remedy": contains_remedy,
+            "analysis_confidence": "high",
+            "response_preview": response_text[:100] + "..." if len(response_text) > 100 else response_text
+        }
+        
+    except Exception as e:
+        return {"error": f"Analysis failed: {str(e)}"}
