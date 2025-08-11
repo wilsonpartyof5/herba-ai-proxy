@@ -1,0 +1,17 @@
+{
+  "current_production": "https://herba-ai-proxy-31dzwinpz-dustins-projects-2a4636fb.vercel.app",
+  "deployment_date": "2025-08-11T17:17:14.566370",
+  "version": "main_fixed.py",
+  "features": [
+    "firebase_auth",
+    "rate_limiting",
+    "ai_analysis",
+    "input_validation"
+  ],
+  "ios_app_urls": [
+    "Herba2/ViewModels/AIHerbalistChatViewModel.swift",
+    "Herba2/Services/AIService.swift",
+    "Herba2/Services/AIHerbalistService.swift"
+  ],
+  "validation_passed": true
+}
