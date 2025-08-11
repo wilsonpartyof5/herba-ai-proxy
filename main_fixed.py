@@ -666,4 +666,4 @@ async def rate_limit_info():
             "ai_analysis": "20 requests per minute per user",
         },
         "authentication": "Firebase ID token required"
-    } 
+    } # Force redeploy - Mon Aug 11 16:55:31 EDT 2025
