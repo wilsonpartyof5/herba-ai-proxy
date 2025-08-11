@@ -667,3 +667,4 @@ async def rate_limit_info():
         },
         "authentication": "Firebase ID token required"
     } # Force redeploy - Mon Aug 11 16:55:31 EDT 2025
+print("Force redeploy - deployment test")
