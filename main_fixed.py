@@ -233,49 +233,40 @@ async def analyze_intent_internal(request_data, user_id):
         
         # AI prompt for intent and phase detection
         ai_prompt = f"""
-Analyze this user message comprehensively to determine both intent and conversation phase.
+You are an AI assistant that analyzes user messages for a herbal medicine app. Your job is to classify the user's intent and conversation phase.
 
 User message: "{user_message}"
 Context: "{context}"
 
-INTENT CATEGORIES:
-- "remedy": User is describing symptoms OR asking for herbal remedy recommendations
-- "alternative": User is asking for an alternative remedy
-- "track": User wants to track their progress
-- "reminder": User wants reminders
-- "general": General questions about herbs/wellness (NOT symptom descriptions)
+INTENT CLASSIFICATION RULES:
+1. "remedy" = ANY mention of symptoms, health issues, or requests for help
+2. "alternative" = asking for different treatment options
+3. "track" = wanting to track progress
+4. "reminder" = wanting reminders
+5. "general" = ONLY questions about herbs/wellness knowledge (NOT symptoms)
 
-CONVERSATION PHASES:
-- "diagnostic": User is describing symptoms but we need more information (first mention)
-- "recommendation": Ready to provide herbal remedies (user has described symptoms with sufficient detail)
-- "follow_up": User is asking about specific herbs/treatments
-- "general": General questions about herbs/wellness
+PHASE CLASSIFICATION RULES:
+1. "diagnostic" = first mention of symptoms, need more info
+2. "recommendation" = ready to provide remedies (sufficient symptom detail)
+3. "follow_up" = questions about specific herbs/treatments
+4. "general" = general knowledge questions
 
-SYMPTOM ANALYSIS:
-- Extract any symptoms mentioned
-- Determine if symptoms are described with sufficient detail for a recommendation
+EXAMPLES:
+- "I have a headache" → intent: "remedy", phase: "diagnostic"
+- "I woke up with congestion" → intent: "remedy", phase: "diagnostic"  
+- "I have had severe sinus pressure for 3 hours" → intent: "remedy", phase: "recommendation"
+- "What is peppermint good for?" → intent: "general", phase: "general"
+- "I need help with my stomach ache" → intent: "remedy", phase: "diagnostic"
 
 Respond with ONLY a JSON object in this exact format:
 {{
     "intent": "remedy|alternative|track|reminder|general",
-    "phase": "diagnostic|recommendation|follow_up|general",
+    "phase": "diagnostic|recommendation|follow_up|general", 
     "symptoms": ["symptom1", "symptom2"],
     "ready_for_remedy": true|false
 }}
 
-CRITICAL GUIDELINES:
-- ANY symptom description (headache, congestion, pain, etc.) = "remedy" intent
-- ANY mention of symptoms, even with context = "remedy" intent
-- If user describes symptoms with duration/severity/context, set ready_for_remedy=true
-- If user just mentions symptoms without context, set ready_for_remedy=false
-- "What is peppermint good for?" = "general" intent
-- "I have a headache" = "remedy" intent
-- "I need help with my stomach ache" = "remedy" intent
-- "I have had severe sinus pressure for 3 hours" = "remedy" intent
-- "I woke up with congestion" = "remedy" intent
-- ONLY questions about herbs/wellness knowledge = "general" intent
-- Be precise about intent vs phase distinction
-- Consider natural language variations for symptoms
+REMEMBER: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
 """
         
         # Use OpenAI to analyze
