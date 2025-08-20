@@ -233,43 +233,23 @@ async def analyze_intent_internal(request_data, user_id):
         
         # Enhanced AI prompt with deep understanding
         ai_prompt = f"""
-You are Herba, an expert AI herbalist with deep understanding of natural health consultations.
-
-IMPORTANT: If the user mentions ANY symptoms, pain, discomfort, or health issues, classify the intent as "remedy".
+You are Herba, an expert AI herbalist analyzing user messages for intent and conversation phase.
 
 User message: "{user_message}"
 Context: "{context}"
 
-CONSULTATION FLOW UNDERSTANDING:
-- Users naturally progress from vague symptoms to detailed descriptions
-- After 2-3 diagnostic questions, you should have sufficient information
-- Users want solutions, not endless questioning
-- Natural language cues indicate remedy-seeking: "I need help", "What can I do", "I'm suffering"
+INTENT CLASSIFICATION RULES:
+1. "remedy" = ANY mention of symptoms, health issues, pain, discomfort, or requests for help
+2. "alternative" = asking for different treatment options  
+3. "track" = wanting to track progress
+4. "reminder" = wanting reminders
+5. "general" = ONLY questions about herbs/wellness knowledge (NOT symptoms)
 
-INTENT RECOGNITION:
-- ANY symptom description = "remedy" intent
-- Users describe symptoms in many ways: "I have X", "I'm experiencing X", "X is bothering me"
-- Context matters: urgency, duration, severity all indicate remedy needs
-- Natural language variations are normal and expected
-- "I have a headache" = "remedy" intent
-- "I woke up with congestion" = "remedy" intent
-- "I need help with my stomach ache" = "remedy" intent
-- "I'm experiencing pain" = "remedy" intent
-- "My stomach hurts" = "remedy" intent
-- ANY mention of symptoms, pain, discomfort = "remedy" intent
-- ONLY questions about herbs/wellness knowledge = "general" intent
-
-PHASE INTELLIGENCE:
-- Diagnostic: Gather essential information (limit 2-3 questions)
-- Recommendation: Provide remedies when sufficient detail is available
-- Follow-up: Answer specific questions about remedies
-- General: Knowledge questions about herbs/wellness
-
-CONVERSATION CONTEXT:
-- Track symptom progression from vague to detailed
-- Recognize when user has provided sufficient information
-- Detect user frustration or urgency
-- Balance thoroughness with efficiency
+PHASE CLASSIFICATION RULES:
+1. "diagnostic" = first mention of symptoms, need more info
+2. "recommendation" = ready to provide remedies (sufficient symptom detail)
+3. "follow_up" = questions about specific herbs/treatments
+4. "general" = general knowledge questions
 
 EXAMPLES:
 - "I have a headache" → intent: "remedy", phase: "diagnostic"
@@ -278,7 +258,7 @@ EXAMPLES:
 - "What is peppermint good for?" → intent: "general", phase: "general"
 - "I need help with my stomach ache" → intent: "remedy", phase: "diagnostic"
 
-Your goal: Provide helpful herbal remedies efficiently while maintaining natural conversation flow.
+CRITICAL: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
 
 Respond with ONLY a JSON object in this exact format:
 {{
@@ -287,10 +267,6 @@ Respond with ONLY a JSON object in this exact format:
     "symptoms": ["symptom1", "symptom2"],
     "ready_for_remedy": true|false
 }}
-
-CRITICAL: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
-SYMPTOM EXAMPLES = "remedy" intent: headache, congestion, pain, stomach ache, nausea, etc.
-KNOWLEDGE EXAMPLES = "general" intent: "What is peppermint good for?", "Tell me about ginger"
 """
         
         # Use OpenAI to analyze
