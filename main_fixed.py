@@ -271,7 +271,7 @@ Respond with ONLY a JSON object in this exact format:
         
         # Use OpenAI to analyze
         ai_response = client.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-4",
             messages=[{"role": "system", "content": ai_prompt}],
             max_tokens=200,
             temperature=0.1,
