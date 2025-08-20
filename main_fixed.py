@@ -197,6 +197,7 @@ async def detect_conversation_phase(user_query, user_id, conversation_context):
         symptoms = ai_analysis.get("symptoms", [])
         
         print(f"[DEBUG] AI Phase Analysis - Phase: '{phase}', Ready: {ready_for_remedy}, Symptoms: {symptoms}")
+        print(f"[DEBUG] Full AI Analysis Result: {ai_analysis}")
         
         # Override phase based on AI analysis
         if phase == "recommendation" and ready_for_remedy:
