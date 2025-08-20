@@ -235,6 +235,8 @@ async def analyze_intent_internal(request_data, user_id):
         ai_prompt = f"""
 You are Herba, an expert AI herbalist with deep understanding of natural health consultations.
 
+IMPORTANT: If the user mentions ANY symptoms, pain, discomfort, or health issues, classify the intent as "remedy".
+
 User message: "{user_message}"
 Context: "{context}"
 
@@ -252,6 +254,9 @@ INTENT RECOGNITION:
 - "I have a headache" = "remedy" intent
 - "I woke up with congestion" = "remedy" intent
 - "I need help with my stomach ache" = "remedy" intent
+- "I'm experiencing pain" = "remedy" intent
+- "My stomach hurts" = "remedy" intent
+- ANY mention of symptoms, pain, discomfort = "remedy" intent
 - ONLY questions about herbs/wellness knowledge = "general" intent
 
 PHASE INTELLIGENCE:
