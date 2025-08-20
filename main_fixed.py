@@ -170,8 +170,8 @@ def search_herbal_knowledge(query, herbal_data):
 # Conversation memory storage (in production, this would be in a database)
 conversation_memory = {}
 
-def detect_conversation_phase(user_query, user_id, conversation_context):
-    """Detect which phase of conversation we're in using iOS conversation context"""
+async def detect_conversation_phase(user_query, user_id, conversation_context):
+    """Detect which phase of conversation we're in using AI-powered analysis"""
     
     # Extract conversation context from iOS app
     diagnostic_count = 0
@@ -181,54 +181,144 @@ def detect_conversation_phase(user_query, user_id, conversation_context):
         diagnostic_count = conversation_context.get("diagnosticQuestionCount", 0)
         last_phase = conversation_context.get("lastPhase", "initial")
     
-    print(f"[DEBUG] Phase Detection - Count: {diagnostic_count}, Last: {last_phase}, Query: {user_query[:50]}...")
+    print(f"[DEBUG] AI Phase Detection - Count: {diagnostic_count}, Last: {last_phase}, Query: {user_query[:50]}...")
     
-    # Check if user is asking about a specific herb
-    herb_keywords = ["side effects", "dosage", "how to use", "precautions", "interactions"]
-    if any(keyword in user_query.lower() for keyword in herb_keywords):
-        print("[DEBUG] Detected follow_up phase")
-        return "follow_up"
-    
-    # Check if user is asking general questions
-    general_keywords = ["what is", "tell me about", "explain", "how does", "why"]
-    if any(keyword in user_query.lower() for keyword in general_keywords):
-        print("[DEBUG] Detected general_knowledge phase")
-        return "general_knowledge"
-    
-    # Priority 1: If we've asked 2+ diagnostic questions, transition to recommendation
-    if diagnostic_count >= 2:
-        print(f"[DEBUG] Transitioning to recommendation (asked {diagnostic_count} questions)")
-        return "recommendation"
-    
-    # Priority 2: Check for explicit remedy requests
-    remedy_triggers = [
-        "recommend", "suggestion", "remedy", "help", "solution",
-        "what should I take", "what can I use", "need something",
-        "give me", "suggest", "recommendation"
-    ]
-    
-    if any(trigger in user_query.lower() for trigger in remedy_triggers):
-        if diagnostic_count >= 1:
-            print("[DEBUG] Remedy requested with some context - transitioning to recommendation")
+    # Use AI to analyze the message and determine phase
+    try:
+        # Call the enhanced analyzeIntent endpoint internally
+        ai_analysis = await analyze_intent_internal({
+            "message": user_query,
+            "context": str(conversation_context)
+        }, user_id)
+        
+        # Extract phase from AI analysis
+        phase = ai_analysis.get("phase", "diagnostic")
+        ready_for_remedy = ai_analysis.get("ready_for_remedy", False)
+        symptoms = ai_analysis.get("symptoms", [])
+        
+        print(f"[DEBUG] AI Phase Analysis - Phase: '{phase}', Ready: {ready_for_remedy}, Symptoms: {symptoms}")
+        
+        # Override phase based on AI analysis
+        if phase == "recommendation" and ready_for_remedy:
+            print("[DEBUG] AI determined ready for recommendation")
             return "recommendation"
-        else:
-            print("[DEBUG] Remedy requested but need more context - staying diagnostic")
-            return "diagnostic"
-    
-    # Priority 3: Symptom info with sufficient context
-    symptom_keywords = ["headache", "pain", "ache", "sore", "hurt", "severe", "mild", "hours", "days", "week", "throat", "nose"]
-    if any(keyword in user_query.lower() for keyword in symptom_keywords):
-        # If we have severity or duration indicators AND some previous context
-        if diagnostic_count >= 1 and ("severe" in user_query.lower() or "hours" in user_query.lower() or "week" in user_query.lower() or "days" in user_query.lower()):
-            print("[DEBUG] Sufficient symptom context - transitioning to recommendation")
+        elif phase == "recommendation":
+            print("[DEBUG] AI determined recommendation phase (even without ready_for_remedy)")
             return "recommendation"
+        elif phase == "follow_up":
+            print("[DEBUG] AI detected follow_up phase")
+            return "follow_up"
+        elif phase == "general":
+            print("[DEBUG] AI detected general phase")
+            return "general_knowledge"
         else:
-            print("[DEBUG] Symptom detected - staying diagnostic for more info")
+            print("[DEBUG] AI determined diagnostic phase needed")
             return "diagnostic"
-    
-    # Default: Start with diagnostic for symptom gathering
-    print("[DEBUG] Default diagnostic phase")
-    return "diagnostic"
+            
+    except Exception as e:
+        print(f"[DEBUG] AI phase detection failed: {e}, falling back to rule-based")
+        # Fallback to simple rule-based detection
+        if "side effects" in user_query.lower() or "dosage" in user_query.lower():
+            return "follow_up"
+        elif "what is" in user_query.lower() or "tell me about" in user_query.lower():
+            return "general_knowledge"
+        else:
+            return "diagnostic"
+
+async def analyze_intent_internal(request_data, user_id):
+    """Internal function to analyze intent without HTTP overhead"""
+    try:
+        user_message = request_data.get("message", "")
+        context = request_data.get("context", "")
+        
+        # AI prompt for intent and phase detection
+        ai_prompt = f"""
+Analyze this user message comprehensively to determine both intent and conversation phase.
+
+User message: "{user_message}"
+Context: "{context}"
+
+INTENT CATEGORIES:
+- "remedy": User is describing symptoms OR asking for herbal remedy recommendations
+- "alternative": User is asking for an alternative remedy
+- "track": User wants to track their progress
+- "reminder": User wants reminders
+- "general": General questions about herbs/wellness (NOT symptom descriptions)
+
+CONVERSATION PHASES:
+- "diagnostic": User is describing symptoms but we need more information (first mention)
+- "recommendation": Ready to provide herbal remedies (user has described symptoms with sufficient detail)
+- "follow_up": User is asking about specific herbs/treatments
+- "general": General questions about herbs/wellness
+
+SYMPTOM ANALYSIS:
+- Extract any symptoms mentioned
+- Determine if symptoms are described with sufficient detail for a recommendation
+
+Respond with ONLY a JSON object in this exact format:
+{{
+    "intent": "remedy|alternative|track|reminder|general",
+    "phase": "diagnostic|recommendation|follow_up|general",
+    "symptoms": ["symptom1", "symptom2"],
+    "ready_for_remedy": true|false
+}}
+
+CRITICAL GUIDELINES:
+- ANY symptom description (headache, congestion, pain, etc.) = "remedy" intent
+- If user describes symptoms with duration/severity/context, set ready_for_remedy=true
+- If user just mentions symptoms without context, set ready_for_remedy=false
+- "What is peppermint good for?" = "general" intent
+- "I have a headache" = "remedy" intent
+- "I need help with my stomach ache" = "remedy" intent
+- Be precise about intent vs phase distinction
+- Consider natural language variations for symptoms
+"""
+        
+        # Use OpenAI to analyze
+        ai_response = client.chat.completions.create(
+            model="gpt-4-turbo",
+            messages=[{"role": "system", "content": ai_prompt}],
+            max_tokens=200,
+            temperature=0.1,
+        )
+        
+        # Parse JSON response
+        response_text = ai_response.choices[0].message.content.strip()
+        result = json.loads(response_text)
+        
+        # Validate and extract fields
+        intent = result.get("intent", "general")
+        phase = result.get("phase", "diagnostic")
+        symptoms = result.get("symptoms", [])
+        ready_for_remedy = result.get("ready_for_remedy", False)
+        
+        # Validate intent
+        valid_intents = ["remedy", "alternative", "track", "reminder", "general"]
+        if intent not in valid_intents:
+            intent = "general"
+        
+        # Validate phase
+        valid_phases = ["diagnostic", "recommendation", "follow_up", "general"]
+        if phase not in valid_phases:
+            phase = "diagnostic"
+        
+        return {
+            "intent": intent,
+            "phase": phase,
+            "symptoms": symptoms,
+            "ready_for_remedy": ready_for_remedy,
+            "confidence": "high"
+        }
+        
+    except Exception as e:
+        print(f"[DEBUG] Internal AI analysis error: {e}")
+        return {
+            "intent": "general",
+            "phase": "diagnostic",
+            "symptoms": [],
+            "ready_for_remedy": False,
+            "confidence": "low"
+        }
 
 def determine_knowledge_source(user_query, phase):
     """Determine whether to use curated knowledge or general AI knowledge"""
@@ -299,12 +389,15 @@ Diagnostic context: {diagnostic_context}
 
 Relevant herbs: {relevant_herbs}
 
-IMPORTANT: 
-- Recommend ONLY ONE primary herb (the most effective for their condition)
-- Choose the single best remedy based on their symptoms and profile
-- Respond ONLY with valid JSON. Do not include any text before or after the JSON.
+CRITICAL INSTRUCTIONS:
+- You MUST respond with ONLY valid JSON format
+- NO natural language text before or after the JSON
+- NO tracking questions or progress monitoring offers
+- NO "Would you like to track" or similar phrases
+- Focus ONLY on the remedy recommendation and instructions
+- If you cannot provide JSON, respond with: {{"error": "Unable to provide recommendation in required format"}}
 
-Use this exact format:
+Use this EXACT JSON format (no variations):
 
 {{
   "recommendations": [
@@ -538,8 +631,8 @@ async def get_herbalist_response(
             }
             print(f"[DEBUG] ℹ️ Using default conversation context: {conversation_context}")
         
-        # Detect conversation phase using iOS context
-        phase = detect_conversation_phase(req.query, user_id, conversation_context)
+        # Detect conversation phase using AI-powered analysis
+        phase = await detect_conversation_phase(req.query, user_id, conversation_context)
         
         # Create personalized prompt
         prompt = create_personalized_prompt(req.query, profile_info, phase, user_id, conversation_context)
@@ -566,8 +659,11 @@ async def get_herbalist_response(
                 # Update conversation memory with complete response
                 update_conversation_memory(user_id, req.query, full_response, phase, conversation_context)
                 
-                # Send completion signal with phase info
-                yield f"data: {json.dumps({'content': '', 'done': True, 'phase': phase, 'full_response': full_response})}\n\n"
+                # Check if response contains a remedy recommendation
+                is_solution = phase == "recommendation" or "remedy" in full_response.lower() or any(herb in full_response.lower() for herb in ["echinacea", "peppermint", "ginger", "chamomile", "lavender", "turmeric", "aloe", "garlic", "honey", "lemon"])
+                
+                # Send completion signal with phase info and solution flag
+                yield f"data: {json.dumps({'content': '', 'done': True, 'phase': phase, 'full_response': full_response, 'isSolution': is_solution})}\n\n"
                 
             except Exception as e:
                 print(f"Error in streaming: {e}")
@@ -603,6 +699,121 @@ async def test_auth_endpoint(user_id: str = Depends(verify_firebase_token)):
         "firebase_configured": firebase_configured,
         "timestamp": "2024-08-07T23:30:00Z"
     }
+
+@app.post("/analyzeIntent")
+async def analyze_intent(
+    req: dict,
+    user_id: str = Depends(verify_firebase_token)
+):
+    """AI-powered analysis to detect user intent from their message"""
+    try:
+        # Rate limiting
+        if not check_rate_limit(user_id, 20, 60):  # 20 requests per minute
+            raise HTTPException(status_code=429, detail="Rate limit exceeded")
+        
+        user_message = req.get("message", "")
+        context = req.get("context", "")
+        
+        if not user_message:
+            raise HTTPException(status_code=400, detail="Message text is required")
+        
+        # AI prompt for intent and phase detection
+        ai_prompt = f"""
+Analyze this user message comprehensively to determine both intent and conversation phase.
+
+User message: "{user_message}"
+Context: "{context}"
+
+INTENT CATEGORIES:
+- "remedy": User is explicitly asking for a herbal remedy recommendation (e.g., "I need a remedy for headache", "What herb should I take?", "Recommend something for my pain")
+- "alternative": User is asking for an alternative remedy (e.g., "What else can I try?", "Alternative to peppermint", "Different remedy")
+- "track": User wants to track their progress (e.g., "Track my progress", "Monitor my symptoms", "Keep track")
+- "reminder": User wants reminders (e.g., "Remind me", "Daily reminder", "Set up reminders")
+- "general": General questions, clarifications, or other conversation
+
+CONVERSATION PHASES:
+- "diagnostic": User is describing symptoms but we need more information (e.g., "I have a headache", "I feel congested", "My stomach hurts")
+- "recommendation": Ready to provide herbal remedies (user has described symptoms with sufficient detail)
+- "follow_up": User is asking about specific herbs/treatments (e.g., "How do I use this?", "What are the side effects?")
+- "general": General questions about herbs/wellness
+
+SYMPTOM ANALYSIS:
+- Extract any symptoms mentioned (e.g., "congestion", "headache", "sinus pressure", "runny nose")
+- Determine if symptoms are described with sufficient detail for a recommendation
+
+Respond with ONLY a JSON object in this exact format:
+{{
+    "intent": "remedy|alternative|track|reminder|general",
+    "phase": "diagnostic|recommendation|follow_up|general",
+    "symptoms": ["symptom1", "symptom2"],
+    "ready_for_remedy": true|false
+}}
+
+Guidelines:
+- If user describes symptoms with duration/severity, set ready_for_remedy=true
+- If user just mentions symptoms without context, set ready_for_remedy=false
+- Be precise about intent vs phase distinction
+- Consider natural language variations for symptoms
+"""
+        
+        # Use OpenAI to analyze the intent and phase
+        ai_response = client.chat.completions.create(
+            model="gpt-4-turbo",
+            messages=[{"role": "system", "content": ai_prompt}],
+            max_tokens=200,
+            temperature=0.1,  # Low temperature for consistent analysis
+        )
+        
+        # Extract the result
+        response_text = ai_response.choices[0].message.content.strip()
+        
+        # Parse JSON response
+        try:
+            import json
+            result = json.loads(response_text)
+            
+            # Validate and extract fields
+            intent = result.get("intent", "general")
+            phase = result.get("phase", "diagnostic")
+            symptoms = result.get("symptoms", [])
+            ready_for_remedy = result.get("ready_for_remedy", False)
+            
+            # Validate intent
+            valid_intents = ["remedy", "alternative", "track", "reminder", "general"]
+            if intent not in valid_intents:
+                intent = "general"
+            
+            # Validate phase
+            valid_phases = ["diagnostic", "recommendation", "follow_up", "general"]
+            if phase not in valid_phases:
+                phase = "diagnostic"
+            
+            print(f"[DEBUG] AI Analysis - Message: '{user_message}', Intent: '{intent}', Phase: '{phase}', Symptoms: {symptoms}, Ready: {ready_for_remedy}")
+            
+            return {
+                "intent": intent,
+                "phase": phase,
+                "symptoms": symptoms,
+                "ready_for_remedy": ready_for_remedy,
+                "confidence": "high",
+                "message_preview": user_message[:100] + "..." if len(user_message) > 100 else user_message
+            }
+            
+        except json.JSONDecodeError as e:
+            print(f"[DEBUG] JSON parsing error: {e}, Response: {response_text}")
+            # Fallback to basic intent detection
+            return {
+                "intent": "general",
+                "phase": "diagnostic",
+                "symptoms": [],
+                "ready_for_remedy": False,
+                "confidence": "low",
+                "message_preview": user_message[:100] + "..." if len(user_message) > 100 else user_message
+            }
+        
+    except Exception as e:
+        print(f"[DEBUG] AI Intent Analysis Error: {e}")
+        raise HTTPException(status_code=500, detail=f"Intent analysis failed: {str(e)}")
 
 @app.post("/analyzeResponseForRemedy")
 async def analyze_response_for_remedy(
