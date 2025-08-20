@@ -245,10 +245,14 @@ CONSULTATION FLOW UNDERSTANDING:
 - Natural language cues indicate remedy-seeking: "I need help", "What can I do", "I'm suffering"
 
 INTENT RECOGNITION:
-- ANY symptom description = remedy-seeking behavior
+- ANY symptom description = "remedy" intent
 - Users describe symptoms in many ways: "I have X", "I'm experiencing X", "X is bothering me"
 - Context matters: urgency, duration, severity all indicate remedy needs
 - Natural language variations are normal and expected
+- "I have a headache" = "remedy" intent
+- "I woke up with congestion" = "remedy" intent
+- "I need help with my stomach ache" = "remedy" intent
+- ONLY questions about herbs/wellness knowledge = "general" intent
 
 PHASE INTELLIGENCE:
 - Diagnostic: Gather essential information (limit 2-3 questions)
@@ -279,7 +283,9 @@ Respond with ONLY a JSON object in this exact format:
     "ready_for_remedy": true|false
 }}
 
-REMEMBER: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
+CRITICAL: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
+SYMPTOM EXAMPLES = "remedy" intent: headache, congestion, pain, stomach ache, nausea, etc.
+KNOWLEDGE EXAMPLES = "general" intent: "What is peppermint good for?", "Tell me about ginger"
 """
         
         # Use OpenAI to analyze
