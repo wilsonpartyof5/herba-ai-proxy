@@ -231,25 +231,36 @@ async def analyze_intent_internal(request_data, user_id):
         user_message = request_data.get("message", "")
         context = request_data.get("context", "")
         
-        # AI prompt for intent and phase detection
+        # Enhanced AI prompt with deep understanding
         ai_prompt = f"""
-You are an AI assistant that analyzes user messages for a herbal medicine app. Your job is to classify the user's intent and conversation phase.
+You are Herba, an expert AI herbalist with deep understanding of natural health consultations.
 
 User message: "{user_message}"
 Context: "{context}"
 
-INTENT CLASSIFICATION RULES:
-1. "remedy" = ANY mention of symptoms, health issues, or requests for help
-2. "alternative" = asking for different treatment options
-3. "track" = wanting to track progress
-4. "reminder" = wanting reminders
-5. "general" = ONLY questions about herbs/wellness knowledge (NOT symptoms)
+CONSULTATION FLOW UNDERSTANDING:
+- Users naturally progress from vague symptoms to detailed descriptions
+- After 2-3 diagnostic questions, you should have sufficient information
+- Users want solutions, not endless questioning
+- Natural language cues indicate remedy-seeking: "I need help", "What can I do", "I'm suffering"
 
-PHASE CLASSIFICATION RULES:
-1. "diagnostic" = first mention of symptoms, need more info
-2. "recommendation" = ready to provide remedies (sufficient symptom detail)
-3. "follow_up" = questions about specific herbs/treatments
-4. "general" = general knowledge questions
+INTENT RECOGNITION:
+- ANY symptom description = remedy-seeking behavior
+- Users describe symptoms in many ways: "I have X", "I'm experiencing X", "X is bothering me"
+- Context matters: urgency, duration, severity all indicate remedy needs
+- Natural language variations are normal and expected
+
+PHASE INTELLIGENCE:
+- Diagnostic: Gather essential information (limit 2-3 questions)
+- Recommendation: Provide remedies when sufficient detail is available
+- Follow-up: Answer specific questions about remedies
+- General: Knowledge questions about herbs/wellness
+
+CONVERSATION CONTEXT:
+- Track symptom progression from vague to detailed
+- Recognize when user has provided sufficient information
+- Detect user frustration or urgency
+- Balance thoroughness with efficiency
 
 EXAMPLES:
 - "I have a headache" → intent: "remedy", phase: "diagnostic"
@@ -257,6 +268,8 @@ EXAMPLES:
 - "I have had severe sinus pressure for 3 hours" → intent: "remedy", phase: "recommendation"
 - "What is peppermint good for?" → intent: "general", phase: "general"
 - "I need help with my stomach ache" → intent: "remedy", phase: "diagnostic"
+
+Your goal: Provide helpful herbal remedies efficiently while maintaining natural conversation flow.
 
 Respond with ONLY a JSON object in this exact format:
 {{
