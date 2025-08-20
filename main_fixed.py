@@ -265,11 +265,15 @@ Respond with ONLY a JSON object in this exact format:
 
 CRITICAL GUIDELINES:
 - ANY symptom description (headache, congestion, pain, etc.) = "remedy" intent
+- ANY mention of symptoms, even with context = "remedy" intent
 - If user describes symptoms with duration/severity/context, set ready_for_remedy=true
 - If user just mentions symptoms without context, set ready_for_remedy=false
 - "What is peppermint good for?" = "general" intent
 - "I have a headache" = "remedy" intent
 - "I need help with my stomach ache" = "remedy" intent
+- "I have had severe sinus pressure for 3 hours" = "remedy" intent
+- "I woke up with congestion" = "remedy" intent
+- ONLY questions about herbs/wellness knowledge = "general" intent
 - Be precise about intent vs phase distinction
 - Consider natural language variations for symptoms
 """
