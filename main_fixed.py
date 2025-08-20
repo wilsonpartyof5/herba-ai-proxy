@@ -712,48 +712,47 @@ async def analyze_intent(
         if not user_message:
             raise HTTPException(status_code=400, detail="Message text is required")
         
-        # AI prompt for intent and phase detection
+        # Enhanced AI prompt with deep understanding
         ai_prompt = f"""
-Analyze this user message comprehensively to determine both intent and conversation phase.
+You are Herba, an expert AI herbalist analyzing user messages for intent and conversation phase.
 
 User message: "{user_message}"
 Context: "{context}"
 
-INTENT CATEGORIES:
-- "remedy": User is explicitly asking for a herbal remedy recommendation (e.g., "I need a remedy for headache", "What herb should I take?", "Recommend something for my pain")
-- "alternative": User is asking for an alternative remedy (e.g., "What else can I try?", "Alternative to peppermint", "Different remedy")
-- "track": User wants to track their progress (e.g., "Track my progress", "Monitor my symptoms", "Keep track")
-- "reminder": User wants reminders (e.g., "Remind me", "Daily reminder", "Set up reminders")
-- "general": General questions, clarifications, or other conversation
+INTENT CLASSIFICATION RULES:
+1. "remedy" = ANY mention of symptoms, health issues, pain, discomfort, or requests for help
+2. "alternative" = asking for different treatment options  
+3. "track" = wanting to track progress
+4. "reminder" = wanting reminders
+5. "general" = ONLY questions about herbs/wellness knowledge (NOT symptoms)
 
-CONVERSATION PHASES:
-- "diagnostic": User is describing symptoms but we need more information (e.g., "I have a headache", "I feel congested", "My stomach hurts")
-- "recommendation": Ready to provide herbal remedies (user has described symptoms with sufficient detail)
-- "follow_up": User is asking about specific herbs/treatments (e.g., "How do I use this?", "What are the side effects?")
-- "general": General questions about herbs/wellness
+PHASE CLASSIFICATION RULES:
+1. "diagnostic" = first mention of symptoms, need more info
+2. "recommendation" = ready to provide remedies (sufficient symptom detail)
+3. "follow_up" = questions about specific herbs/treatments
+4. "general" = general knowledge questions
 
-SYMPTOM ANALYSIS:
-- Extract any symptoms mentioned (e.g., "congestion", "headache", "sinus pressure", "runny nose")
-- Determine if symptoms are described with sufficient detail for a recommendation
+EXAMPLES:
+- "I have a headache" → intent: "remedy", phase: "diagnostic"
+- "I woke up with congestion" → intent: "remedy", phase: "diagnostic"  
+- "I have had severe sinus pressure for 3 hours" → intent: "remedy", phase: "recommendation"
+- "What is peppermint good for?" → intent: "general", phase: "general"
+- "I need help with my stomach ache" → intent: "remedy", phase: "diagnostic"
+
+CRITICAL: ANY symptom mention = "remedy" intent. ONLY herb knowledge questions = "general" intent.
 
 Respond with ONLY a JSON object in this exact format:
 {{
     "intent": "remedy|alternative|track|reminder|general",
-    "phase": "diagnostic|recommendation|follow_up|general",
+    "phase": "diagnostic|recommendation|follow_up|general", 
     "symptoms": ["symptom1", "symptom2"],
     "ready_for_remedy": true|false
 }}
-
-Guidelines:
-- If user describes symptoms with duration/severity, set ready_for_remedy=true
-- If user just mentions symptoms without context, set ready_for_remedy=false
-- Be precise about intent vs phase distinction
-- Consider natural language variations for symptoms
 """
         
         # Use OpenAI to analyze the intent and phase
         ai_response = client.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-4",
             messages=[{"role": "system", "content": ai_prompt}],
             max_tokens=200,
             temperature=0.1,  # Low temperature for consistent analysis
